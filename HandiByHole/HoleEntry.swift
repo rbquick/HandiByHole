@@ -39,31 +39,37 @@ struct HoleEntry: View {
     
     var body: some View {
         VStack {
-            HStack {
-                if modelscore.currentHole >= 9 {
-                    VStack {
-                        Text("Front:")
+            VStack {
+                HStack {
+                    
+                    if modelscore.currentHole >= 9 {
+                        
+                        Text("F:")
                         Text("\(modelscore.scoreFront9)")
+                        
                     }
-                }
-                if modelscore.currentHole == 18 {
-                    VStack {
-                        Text("Back:")
+                    if modelscore.currentHole == 18 {
+                        
+                        Text("B:")
                         Text("\(modelscore.scoreBack9)")
+                        
                     }
-                }
-                VStack {
+                    
                     Text("Score:")
                     Text("\(modelscore.scoreCurrent)")
                 }
-                Spacer()
-                Text("Hole: \(modelscore.currentHole) ")
-                Text("Par: \(modelpar.getPar(hole: modelscore.currentHole)) ")
+                    HStack {
+                    
+                    Text("Hole: \(modelscore.currentHole) ")
+                    Text("Par: \(modelpar.getPar(hole: modelscore.currentHole)) ")
+                    }
+                
             }
-            .frame(maxWidth: .infinity, minHeight: 40)
+            .frame(maxWidth: .infinity, minHeight: 120)
             .background(Color.blue)
             .foregroundColor(.white)
             .cornerRadius(10)
+            .font(.largeTitle)
             /*
              HStack {
              Text("Club")
@@ -103,6 +109,7 @@ struct HoleEntry: View {
              }
              }
              */
+            Spacer()
             HStack {
                 Text("Strokes: ")
                 Spacer()
@@ -169,6 +176,10 @@ struct HoleEntry: View {
                 HStack {
                     Text("Front: \(modelcanscore.matchFront)    Back: \(modelcanscore.matchBack)    Total: \(modelcanscore.match18)")
                     Spacer()
+                    if modelscore.currentHole == 18 {
+                        Text("$$$: \(modelcanscore.dollars)")
+                            .background(modelcanscore.dollars < 0 ? Color.red : Color.white)
+                    }
                 }
             }
             /*
@@ -268,9 +279,15 @@ extension HoleEntry {
             }
             modelcanscore.match18 = modelcanscore.matchFront + modelcanscore.matchBack
             if modelscore.currentHole == 18 {
+                modelcanscore.dollars = modelcanscore.matchFront < 0 ? -1 : modelcanscore.matchFront > 0 ? 1 : 0
+                modelcanscore.dollars += modelcanscore.matchBack < 0 ? -1 : modelcanscore.matchBack > 0 ? 1 : 0
+                let totmatch =  modelcanscore.matchFront + modelcanscore.matchBack
+                modelcanscore.dollars += totmatch < 0 ? -1 : totmatch > 0 ? 1 : 0
                 if modelcanscore.canScores[16].MatchScore != 0 {
-                    modelcanscore.match18 += totalUp
+                    modelcanscore.dollars += totalUp
                 }
+            } else {
+                modelcanscore.dollars = 0
             }
         }
     }

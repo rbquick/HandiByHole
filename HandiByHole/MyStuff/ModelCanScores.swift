@@ -14,6 +14,7 @@ class ModelCanScore: ObservableObject {
     @Published var matchFront: Int = 0
     @Published var matchBack: Int = 0
     @Published var match18: Int = 0
+    @Published var dollars: Int = 0
     
     var currentHole = 18
     

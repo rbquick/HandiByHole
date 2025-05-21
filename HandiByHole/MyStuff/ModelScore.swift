@@ -48,7 +48,7 @@ class ModelScore: ObservableObject {
     func previewData() {
         scores.removeAll()
         for i in 1...18 {
-            let myRec = CKScoreRec(PlayerID: 32, GameID: 1, Hole: i, Score: i < 10 ? i : i - 10, Fairway: "H", Green: "O", Putts: 2, Bunker: 0, Penalty: 0)!
+            let myRec = CKScoreRec(PlayerID: 32, GameID: 1, Hole: i, Score: 4, Fairway: "H", Green: "O", Putts: 2, Bunker: 0, Penalty: 0)!
             scores.append(myRec)
         }
         initializeGirs()
