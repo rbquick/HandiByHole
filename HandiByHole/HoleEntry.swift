@@ -269,6 +269,7 @@ extension HoleEntry {
         modelcanscore.match18 = 0
         modelcanscore.matchFront = 0
         modelcanscore.matchBack = 0
+        var pressOn = false
         var totalUp = 0
         for hole in 1...modelscore.currentHole {
             totalUp = modelscore.scores[hole-1].Score < modelcanscore.canScores[hole-1].MatchScore ? 1 : modelscore.scores[hole-1].Score > modelcanscore.canScores[hole-1].MatchScore ? -1 : 0
@@ -278,13 +279,16 @@ extension HoleEntry {
                 modelcanscore.matchBack += totalUp
             }
             modelcanscore.match18 = modelcanscore.matchFront + modelcanscore.matchBack
-            if modelscore.currentHole == 18 {
+            if hole == 17 {
+                pressOn = modelcanscore.matchBack != 0
+            }
+            if hole & modelscore.currentHole == 18 {
                 modelcanscore.dollars = modelcanscore.matchFront < 0 ? -1 : modelcanscore.matchFront > 0 ? 1 : 0
                 modelcanscore.dollars += modelcanscore.matchBack < 0 ? -1 : modelcanscore.matchBack > 0 ? 1 : 0
                 let totmatch =  modelcanscore.matchFront + modelcanscore.matchBack
                 modelcanscore.dollars += totmatch < 0 ? -1 : totmatch > 0 ? 1 : 0
-                if modelcanscore.canScores[16].MatchScore != 0 {
-                    modelcanscore.dollars += totalUp
+                if pressOn {
+                    modelcanscore.dollars += modelscore.scores[hole-1].Score < modelcanscore.canScores[hole-1].MatchScore ? 1 : modelscore.scores[hole-1].Score > modelcanscore.canScores[hole-1].MatchScore ? -1 : 0
                 }
             } else {
                 modelcanscore.dollars = 0
