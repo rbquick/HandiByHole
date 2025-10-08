@@ -14,6 +14,9 @@ struct HoleEntry: View {
     
     @State private var showingExporter = false
     
+    @State private var showExportAlert = false
+    @State private var exportAlertMessage = ""
+    
     // fields to accept input from views for updating
     @State var InputScore = 0
     @State var InputPutts = 0
@@ -255,6 +258,13 @@ struct HoleEntry: View {
         .onAppear {
             fillInputs()
         }
+        .alert(isPresented: $showExportAlert) {
+            Alert(
+                title: Text("Export"),
+                message: Text(exportAlertMessage),
+                dismissButton: .default(Text("OK"))
+            )
+        }
     }
 }
 
@@ -338,16 +348,16 @@ extension HoleEntry {
         calcUpDown()
     }
     func saveJASON() {
+
         do {
             try saveJASONToiCloud(items: modelscore.scores, filename: modelscore.JSONFilename)
-        } catch {
-            print("error Saving Scores \(error)")
-        }
-        do {
             try saveJASONToiCloud(items: modelcanscore.canScores, filename: modelcanscore.JSONFilename)
+            exportAlertMessage = "Export successful! Your files have been saved."
         } catch {
+            exportAlertMessage = "Export failed: \(error.localizedDescription)"
             print("error Saving Scores \(error)")
         }
+        showExportAlert = true
     }
     func update() {
         let rec = CKScoreRec(PlayerID: 32, GameID: 1, Hole: modelscore.currentHole, Score: InputScore, Fairway: InputFairway, Green: InputGreen, Putts: InputPutts, Bunker: InputBunker, Penalty: InputPenalty)

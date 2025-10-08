@@ -49,24 +49,28 @@ func saveJASONToiCloud<T: Encodable>(items: [T], filename: String) throws {
     let encoder = JSONEncoder()
         encoder.outputFormatting = .prettyPrinted
         let jsonData = try encoder.encode(items)
-    saveToICloud(fileName: filename, data: jsonData)
+    do {
+        try saveToICloud(fileName: filename, data: jsonData)
+    } catch {
+        throw NSError(domain: "saveJASONToiCloud", code: 1, userInfo: [NSLocalizedDescriptionKey: "iCloud container not available"])
+    }
 }
-func saveToICloud(fileName: String, data: Data) {
+func saveToICloud(fileName: String, data: Data) throws {
     let fileManager = FileManager.default
 
     guard let iCloudURL = fileManager.url(forUbiquityContainerIdentifier: nil)?
         .appendingPathComponent("Documents")
         .appendingPathComponent(fileName) else {
         print("iCloud container not available")
-        return
+        throw NSError(domain: "saveToICloud", code: 1, userInfo: [NSLocalizedDescriptionKey: "iCloud container not available"])
     }
 
     do {
         try fileManager.createDirectory(at: iCloudURL.deletingLastPathComponent(), withIntermediateDirectories: true, attributes: nil)
         try data.write(to: iCloudURL, options: .atomic)
-        print("Saved to iCloud: \(iCloudURL)")
+      //  throw NSError(domain: "Save", code: 1, userInfo: [NSLocalizedDescriptionKey: "File save to icloud"])
     } catch {
-        print("Error saving to iCloud: \(error)")
+        throw NSError(domain: "Save", code: 1, userInfo: [NSLocalizedDescriptionKey: "iCloud container not available"])
     }
 }
 func deleteFromICloud(fileName: String) {
