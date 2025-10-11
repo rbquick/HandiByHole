@@ -26,22 +26,26 @@ struct HoleEntry: View {
     @State var InputGreen = ""
     @State var InputClub = "3-Wood"
     @State var InputDistance = 0
-    @State var InputPutLength = 0
+    @State var InputPut1st = 0
     @State var InputSandSave = false
     @State var InputUPDown = false
     @State var InputMatchscore = 0
     @State var InputMatchUpDown = 0
     
     @State var ShowingScoreCard = false
+    @State var ShowingHoleDetails = false
     
     @FocusState private var isFocused: Bool
     
+    let clubByHole = ["5-Wood", "5-Wood", "Iron 7", "Iron 5", "3-Wood", "3-Wood", "Iron 7", "3-Wood", "3-Wood", "3-Wood", "3-Week", "Iron 9", "5-Wood", "3-Wood", "Iron 7", "3-Wood", "3-Wood", "3-Wood"]
     let clubPickes = ["", "Driver", "3-Wood", "5-Wood", "Resque", "Iron 4", "Iron 5", "Iron 6", "Iron 7", "Iron 8", "Iron 9", "P Wedge", "A Wedge", "60 Deg"]
     let fairwaySelections = ["", "Left", "Hit", "Right", "Miss", "Bunker"]
     let greenSelections = ["", "Left", "Hit", "Right", "Over", "Short"]
     
     var body: some View {
         VStack {
+            HeaderView()
+            /*
             VStack {
                 HStack {
                     
@@ -73,7 +77,7 @@ struct HoleEntry: View {
             .foregroundColor(.white)
             .cornerRadius(10)
             .font(.largeTitle)
-            /*
+            
              HStack {
              Text("Club")
              Spacer()
@@ -133,7 +137,7 @@ struct HoleEntry: View {
              Spacer()
              
              HStack {
-             TextField("Enter number", value: $InputPutLength, formatter: NumberFormatter())
+             TextField("Enter number", value: $InputPut1st, formatter: NumberFormatter())
              .textFieldStyle(RoundedBorderTextFieldStyle())
              .keyboardType(.numberPad)
              .focused($isFocused)
@@ -164,6 +168,9 @@ struct HoleEntry: View {
                     modelcanscore.showMatch.toggle()
                 }
                 Spacer()
+                Button("Show Details") {
+                    ShowingHoleDetails.toggle()
+                }
             }
             if modelcanscore.showMatch {
                 
@@ -219,6 +226,9 @@ struct HoleEntry: View {
                 .cornerRadius(10)
                 .sheet(isPresented: $ShowingScoreCard) {
                     ScoreCardView() // Replace with your actual view
+                }
+                .sheet(isPresented: $ShowingHoleDetails) {
+                    HoleDetails()
                 }
                 
                 if modelscore.currentHole > 1 {
@@ -326,7 +336,7 @@ extension HoleEntry {
         for i in 1...18 {
             let rec = CKScoreRec(PlayerID: 32, GameID: 1, Hole: i, Score: modelpar.getPar(hole: i), Fairway: "H", Green: "H", Putts: 2, Bunker: 0, Penalty: 0)
             modelscore.scores.append(rec!)
-            let rec1 = CKCanScoreRec(Hole: i, Club: modelpar.getPar(hole: i) == 3 ? clubPickes[8] : clubPickes[2], Distance: modelpar.getInputDistance(hole: i), PutLength: 0, SandSave: false, UPDown: false, MatchScore: modelpar.getPar(hole: i), MatchUpDown: 0)
+            let rec1 = CKCanScoreRec(Hole: i, Club: clubByHole[i - 1], Distance: modelpar.getYardage(hole: i), Put1st: 0, SandSave: false, UPDown: false, MatchScore: modelpar.getPar(hole: i), MatchUpDown: 0)
             modelcanscore.canScores.append(rec1!)
         }
         fillInputs()
@@ -340,7 +350,7 @@ extension HoleEntry {
         InputGreen = modelscore.scores[modelscore.currentHole - 1].Green
         InputClub = modelcanscore.canScores[modelscore.currentHole - 1].Club
         InputDistance = modelcanscore.canScores[modelscore.currentHole - 1].Distance
-        InputPutLength = modelcanscore.canScores[modelscore.currentHole - 1].PutLength
+        InputPut1st = modelcanscore.canScores[modelscore.currentHole - 1].Put1st
         InputSandSave = modelcanscore.canScores[modelscore.currentHole - 1].SandSave
         InputUPDown = modelcanscore.canScores[modelscore.currentHole - 1].UPDown
         InputMatchscore = modelcanscore.canScores[modelscore.currentHole - 1].MatchScore
@@ -367,7 +377,7 @@ extension HoleEntry {
         } catch {
             print("error saving scores data to json file \(error)")
         }
-        let rec1 = CKCanScoreRec(Hole: modelscore.currentHole, Club: InputClub, Distance: InputDistance, PutLength: InputPutLength, SandSave: InputSandSave, UPDown: InputUPDown, MatchScore: InputMatchscore, MatchUpDown: InputMatchUpDown)
+        let rec1 = CKCanScoreRec(Hole: modelscore.currentHole, Club: InputClub, Distance: InputDistance, Put1st: InputPut1st, SandSave: InputSandSave, UPDown: InputUPDown, MatchScore: InputMatchscore, MatchUpDown: InputMatchUpDown)
         modelcanscore.canScores[modelscore.currentHole - 1] = rec1!
         do {
             try saveToJSONFile(items: modelcanscore.canScores, filename: modelcanscore.JSONFilename)

@@ -32,7 +32,7 @@ class ModelCanScore: ObservableObject {
     func previewData() {
         canScores.removeAll()
         for i in 1...18 {
-            let myRec = CKCanScoreRec(Hole: i, Club: "3 Wood", Distance: 200, PutLength: 20, SandSave: false, UPDown: false, MatchScore: 4, MatchUpDown: 1)!
+            let myRec = CKCanScoreRec(Hole: i, Club: "3-Wood", Distance: 200, Put1st: 20, SandSave: false, UPDown: false, MatchScore: 4, MatchUpDown: 1)!
             canScores.append(myRec)
         }
     }

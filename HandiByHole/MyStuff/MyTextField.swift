@@ -16,7 +16,7 @@ enum myTextType: String {
 }
 struct myTextField: View {
     @Binding var value: String
-    var title: String
+    var title: String = ""
     var subtitle: String?
     var texttype: myTextType
     let ints = "1234567890"
@@ -25,13 +25,15 @@ struct myTextField: View {
     var body: some View {
         return GeometryReader { geometry in
             HStack {
-                VStack(alignment: .leading) {
-                    Text(title)
-                        .frame(width: geometry.size.width * 0.33)
-                    if let subtitle = subtitle, subtitle.isEmpty == false {
-                        Text(subtitle)
-                            .font(.caption)
-                            .foregroundColor(Color.gray)
+                if title.isEmpty  {
+                    VStack(alignment: .leading) {
+                        Text(title)
+                            .frame(width: geometry.size.width * 0.33)
+                        if let subtitle = subtitle, subtitle.isEmpty == false {
+                            Text(subtitle)
+                                .font(.caption)
+                                .foregroundColor(Color.gray)
+                        }
                     }
                 }
                 switch texttype {
@@ -47,7 +49,7 @@ struct myTextField: View {
                         .keyboardType(texttype == myTextType.Int || texttype == myTextType.Double ? .numberPad : .default)
 #endif
                         .border(Color.gray)
-                        .onChange(of: value) { oldValue, newValue in
+                        .onChange(of: value) { newValue in
                             var txt = ""
                             switch texttype {
                             case .Double, .CGFloat:
