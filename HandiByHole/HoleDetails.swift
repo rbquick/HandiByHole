@@ -34,14 +34,6 @@ struct HoleDetails: View {
     @State var InputClub: GolfClub = .threeWood // this is setup by hole from modelcanscore
     @State var InputDistanceToGreen: Double = 0.0
     @State var unitToGreen: DistanceUnit = .yards
-    @State var InputDistandePutt1st: Double = 0.0
-    @State var unitputt1st: DistanceUnit = .feet
-    @State var InputDistandePutt2nd: Double = 0.0
-    @State var unitputt2nd: DistanceUnit = .feet
-    @State var InputDistandePutt3rd: Double = 0.0
-    @State var unitputt3rd: DistanceUnit = .feet
-
-    @State var InputSandSave: Bool = false
     var body: some View {
         VStack {
             HeaderView()
@@ -88,17 +80,6 @@ struct HoleDetails: View {
                 .frame( height: 30)
             Text("drive \(modelpar.getYardage(hole: modelscore.currentHole) - (Int(InputDistanceToGreen) / 3)) ")
             
-            Text("---Putting stats---")
-            DistanceEntryView(entryName: "1st",
-                              myDistance: $InputDistandePutt1st,
-                              selectedUnit: $unitputt1st)
-                .frame( height: 30)
-            DistanceEntryView(entryName: "2nd", myDistance: $InputDistandePutt2nd, selectedUnit: $unitputt2nd)
-                .frame( height: 30)
-            DistanceEntryView(entryName: "3rd", myDistance: $InputDistandePutt3rd, selectedUnit: $unitputt3rd)
-                .frame( height: 30)
-            Toggle("Sand Save", isOn: $InputSandSave)
-            
             Spacer()
             Button("Close") {
                 dismiss()
@@ -110,10 +91,7 @@ struct HoleDetails: View {
         }
         .onDisappear {
             print("HoleDetails saved")
-            print(InputDistandePutt1st)
-            print(InputDistandePutt2nd)
-            print(InputDistandePutt3rd)
-            modelcanscore.updateHoleDetails(hole: modelscore.currentHole, club: InputClub.rawValue, distance: InputDistanceToGreen, putt1st: InputDistandePutt1st, putt2nd: InputDistandePutt2nd, putt3rd: InputDistandePutt3rd, sandsave: InputSandSave)
+            modelcanscore.updateHoleDetails(hole: modelscore.currentHole, club: InputClub.rawValue, distance: InputDistanceToGreen)
         }
         .onAppear {
             // If you want to set based on a String, convert:
@@ -122,19 +100,7 @@ struct HoleDetails: View {
                 InputClub = clubValue
             }
             InputDistanceToGreen = modelcanscore.canScores[modelscore.currentHole - 1].Distance / 3
-            InputDistandePutt1st = modelcanscore.canScores[modelscore.currentHole - 1].Putt1st
-            unitputt1st = InputDistandePutt1st.truncatingRemainder(dividingBy: 1) == 0 ? .feet : .inches
-            InputDistandePutt2nd = modelcanscore.canScores[modelscore.currentHole - 1].Putt2nd
-            
-            unitputt2nd = InputDistandePutt2nd.truncatingRemainder(dividingBy: 1) == 0 ? .feet : .inches
-            InputDistandePutt3rd = modelcanscore.canScores[modelscore.currentHole - 1].Putt3rd
-            
-            unitputt3rd = InputDistandePutt3rd.truncatingRemainder(dividingBy: 1) == 0 ? .feet : .inches
-            InputSandSave = modelcanscore.canScores[modelscore.currentHole - 1].SandSave
             print("HoleDetails appeard")
-                            print(InputDistandePutt1st)
-                            print(InputDistandePutt2nd)
-                            print(InputDistandePutt3rd)
         }
         .padding()
     }
