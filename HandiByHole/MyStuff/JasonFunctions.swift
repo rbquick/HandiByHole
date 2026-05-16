@@ -64,7 +64,7 @@ func saveToICloud(fileName: String, data: Data) throws {
         print("iCloud container not available")
         throw NSError(domain: "saveToICloud", code: 1, userInfo: [NSLocalizedDescriptionKey: "iCloud container not available"])
     }
-
+    print("file Saved to \(iCloudURL)")
     do {
         try fileManager.createDirectory(at: iCloudURL.deletingLastPathComponent(), withIntermediateDirectories: true, attributes: nil)
         try data.write(to: iCloudURL, options: .atomic)

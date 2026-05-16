@@ -24,10 +24,6 @@ struct HoleEntry: View {
     @State var InputPenalty = 0
     @State var InputFairway = ""
     @State var InputGreen = ""
-    @State var InputClub = "3-Wood"
-    @State var InputDistance = 0
-    @State var InputPut1st = 0
-    @State var InputSandSave = false
     @State var InputUPDown = false
     @State var InputMatchscore = 0
     @State var InputMatchUpDown = 0
@@ -45,77 +41,6 @@ struct HoleEntry: View {
     var body: some View {
         VStack {
             HeaderView()
-            /*
-            VStack {
-                HStack {
-                    
-                    if modelscore.currentHole >= 9 {
-                        
-                        Text("F:")
-                        Text("\(modelscore.scoreFront9)")
-                        
-                    }
-                    if modelscore.currentHole == 18 {
-                        
-                        Text("B:")
-                        Text("\(modelscore.scoreBack9)")
-                        
-                    }
-                    
-                    Text("Score:")
-                    Text("\(modelscore.scoreCurrent)")
-                }
-                    HStack {
-                    
-                    Text("Hole: \(modelscore.currentHole) ")
-                    Text("Par: \(modelpar.getPar(hole: modelscore.currentHole)) ")
-                    }
-                
-            }
-            .frame(maxWidth: .infinity, minHeight: 120)
-            .background(Color.blue)
-            .foregroundColor(.white)
-            .cornerRadius(10)
-            .font(.largeTitle)
-            
-             HStack {
-             Text("Club")
-             Spacer()
-             Picker("Club", selection: $InputClub) {
-             ForEach(clubPickes, id: \.self) {
-             Text($0)
-             }
-             }
-             .frame(width: 130, height: 30)
-             .border(.black, width: 1)
-             }
-             HStack {
-             Text("Distance: \(modelpar.getYardage(hole: modelscore.currentHole))")
-             Spacer()
-             
-             HStack {
-             TextField("Enter number", value: $InputDistance, formatter: NumberFormatter())
-             .textFieldStyle(RoundedBorderTextFieldStyle())
-             .keyboardType(.numberPad)
-             .focused($isFocused)
-             .padding()
-             Text("Yards")
-             }
-             .frame(width: 130, height: 30)
-             .border(.black, width: 1)
-             }
-             .onTapGesture {
-             isFocused = false // Dismiss keyboard
-             }
-             .toolbar {
-             ToolbarItemGroup(placement: .keyboard) {
-             Spacer()
-             Button("Done") {
-             isFocused = false
-             }
-             }
-             }
-             */
             Spacer()
             HStack {
                 Text("Strokes: ")
@@ -131,23 +56,7 @@ struct HoleEntry: View {
                 Spacer()
                 ButtonCounter(count: $InputPutts)
             }
-            /*
-             HStack {
-             Text("Put Length:")
-             Spacer()
-             
-             HStack {
-             TextField("Enter number", value: $InputPut1st, formatter: NumberFormatter())
-             .textFieldStyle(RoundedBorderTextFieldStyle())
-             .keyboardType(.numberPad)
-             .focused($isFocused)
-             .padding()
-             Text("Feet")
-             }
-             .frame(width: 130, height: 30)
-             .border(.black, width: 1)
-             }
-             */
+
             if modelpar.getPar(hole: modelscore.currentHole) != 3 {
                 AcurracySelector(accuracy: $InputFairway, section: "Fairways", selections: fairwaySelections)
             }
@@ -192,18 +101,6 @@ struct HoleEntry: View {
                     }
                 }
             }
-            /*
-             HStack {
-             Text("Sand Save: ")
-             Spacer()
-             YNSelector(YN: $InputSandSave)
-             }
-             HStack {
-             Text("Up & Down: ")
-             Spacer()
-             YNSelector(YN: $InputUPDown)
-             }
-             */
             Spacer()
             HStack {
                 if modelscore.currentHole == 1 {
@@ -336,7 +233,7 @@ extension HoleEntry {
         for i in 1...18 {
             let rec = CKScoreRec(PlayerID: 32, GameID: 1, Hole: i, Score: modelpar.getPar(hole: i), Fairway: "H", Green: "H", Putts: 2, Bunker: 0, Penalty: 0)
             modelscore.scores.append(rec!)
-            let rec1 = CKCanScoreRec(Hole: i, Club: clubByHole[i - 1], Distance: modelpar.getYardage(hole: i), Put1st: 0, SandSave: false, UPDown: false, MatchScore: modelpar.getPar(hole: i), MatchUpDown: 0)
+            let rec1 = CKCanScoreRec(Hole: i, Club: clubByHole[i - 1], Distance: Double(modelpar.getYardage(hole: i)), Putt1st: 0, Putt2nd: 0, Putt3rd: 0, SandSave: false, UPDown: false, MatchScore: modelpar.getPar(hole: i), MatchUpDown: 0)
             modelcanscore.canScores.append(rec1!)
         }
         fillInputs()
@@ -348,10 +245,6 @@ extension HoleEntry {
         InputPenalty = modelscore.scores[modelscore.currentHole - 1].Penalty
         InputFairway = modelscore.scores[modelscore.currentHole - 1].Fairway
         InputGreen = modelscore.scores[modelscore.currentHole - 1].Green
-        InputClub = modelcanscore.canScores[modelscore.currentHole - 1].Club
-        InputDistance = modelcanscore.canScores[modelscore.currentHole - 1].Distance
-        InputPut1st = modelcanscore.canScores[modelscore.currentHole - 1].Put1st
-        InputSandSave = modelcanscore.canScores[modelscore.currentHole - 1].SandSave
         InputUPDown = modelcanscore.canScores[modelscore.currentHole - 1].UPDown
         InputMatchscore = modelcanscore.canScores[modelscore.currentHole - 1].MatchScore
         InputMatchUpDown = modelcanscore.canScores[modelscore.currentHole - 1].MatchUpDown
@@ -377,8 +270,7 @@ extension HoleEntry {
         } catch {
             print("error saving scores data to json file \(error)")
         }
-        let rec1 = CKCanScoreRec(Hole: modelscore.currentHole, Club: InputClub, Distance: InputDistance, Put1st: InputPut1st, SandSave: InputSandSave, UPDown: InputUPDown, MatchScore: InputMatchscore, MatchUpDown: InputMatchUpDown)
-        modelcanscore.canScores[modelscore.currentHole - 1] = rec1!
+        modelcanscore.updateHoleEntry(hole: modelscore.currentHole, updown: InputUPDown, matchscore: InputMatchscore, matchupdown: InputMatchUpDown)
         do {
             try saveToJSONFile(items: modelcanscore.canScores, filename: modelcanscore.JSONFilename)
         } catch {

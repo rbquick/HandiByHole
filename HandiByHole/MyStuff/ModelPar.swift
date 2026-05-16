@@ -8,13 +8,17 @@
 import SwiftUI
 import CloudKit
 
+struct CourseTeePair: Hashable {
+    let courseID: Int
+    let teeID: Int
+}
 class ModelPar: ObservableObject {
     @Published var pars = [CKParRec]()
     @Published var isChanged = 0
     
     @Published var currentCoureID: Int = 1
     @Published var currentTeeID: Int = 3
-    
+
 
     let JSONFilename = "pars.json"
     var addRequired = false
@@ -28,7 +32,7 @@ class ModelPar: ObservableObject {
     }
     // init to a non-existing course/tee so the first display will be a change
     init() {
-     //   CreateParsfor(courseID: 1, teeID: 1)
+        //   CreateParsfor(courseID: 1, teeID: 1)
         tracing(function: "init")
         read()
         if pars.count == 0 {
@@ -36,7 +40,9 @@ class ModelPar: ObservableObject {
         }
     }
 
-    @MainActor static let currentModel = ModelPar()
+    
+
+//    @MainActor static let currentModel = ModelPar()
 
     func previewData(courseID: Int, teeID: Int) {
         pars.removeAll()

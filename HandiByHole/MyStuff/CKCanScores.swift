@@ -11,8 +11,10 @@ struct CKCanScoreRec: Identifiable, Codable {
     var id: CKRecord.ID
     var Hole: Int
     var Club: String
-    var Distance: Int
-    var Put1st: Int
+    var Distance: Double
+    var Putt1st: Double
+    var Putt2nd: Double
+    var Putt3rd: Double
     var SandSave: Bool
     var UPDown: Bool
     var MatchScore: Int
@@ -22,20 +24,24 @@ struct CKCanScoreRec: Identifiable, Codable {
         self.id = record.recordID
         self.Hole = record["Hole"] as? Int ?? 1
         self.Club = record["Club"] as? String ?? ""
-        self.Distance = record["Distance"] as? Int ?? 0
-        self.Put1st = record["Put1st"] as? Int ?? 0
+        self.Distance = record["Distance"] as? Double ?? 0
+        self.Putt1st = record["Putt1st"] as? Double ?? 0
+        self.Putt2nd = record["Putt2nd"] as? Double ?? 0
+        self.Putt3rd = record["Putt3rd"] as? Double ?? 0
         self.SandSave = record["SandSave"] as? Bool ?? false
         self.UPDown = record["UPDown"] as? Bool ?? false
         self.MatchScore = record["MatchScore"] as? Int ?? 0
         self.MatchUpDown = record["MatchUpDown"] as? Int ?? 0
         self.record = record
     }
-    init?(Hole: Int, Club: String, Distance: Int, Put1st: Int, SandSave: Bool, UPDown: Bool, MatchScore: Int, MatchUpDown: Int) {
+    init?(Hole: Int, Club: String, Distance: Double, Putt1st: Double, Putt2nd: Double, Putt3rd: Double, SandSave: Bool, UPDown: Bool, MatchScore: Int, MatchUpDown: Int) {
         let record = CKRecord(recordType: myRecordType.CanScore.rawValue)
         record["Hole"] = Hole
         record["Club"] = Club
         record["Distance"] = Distance
-        record["Put1st"] = Put1st
+        record["Putt1st"] = Putt1st
+        record["Putt2nd"] = Putt2nd
+        record["Putt3rd"] = Putt3rd
         record["SandSave"] = SandSave
         record["UPDown"] = UPDown
         record["MatchScore"] = MatchScore
@@ -47,7 +53,9 @@ struct CKCanScoreRec: Identifiable, Codable {
         case Hole
         case Club
         case Distance
-        case Put1st
+        case Putt1st
+        case Putt2nd
+        case Putt3rd
         case SandSave
         case UPDown
         case MatchScore
@@ -59,7 +67,9 @@ struct CKCanScoreRec: Identifiable, Codable {
         try container.encode(Hole, forKey: .Hole)
         try container.encode(Club, forKey: .Club)
         try container.encode(Distance, forKey: .Distance)
-        try container.encode(Put1st, forKey: .Put1st)
+        try container.encode(Putt1st, forKey: .Putt1st)
+        try container.encode(Putt2nd, forKey: .Putt2nd)
+        try container.encode(Putt3rd, forKey: .Putt3rd)
         try container.encode(SandSave, forKey: .SandSave)
         try container.encode(UPDown, forKey: .UPDown)
         try container.encode(MatchScore, forKey: .MatchScore)
@@ -72,8 +82,10 @@ struct CKCanScoreRec: Identifiable, Codable {
         self.id = CKRecord.ID(recordName: recordName)
         self.Hole = try container.decode(Int.self, forKey: .Hole)
         self.Club = try container.decode(String.self, forKey: .Club)
-        self.Distance = try container.decode(Int.self, forKey: .Distance)
-        self.Put1st = try container.decode(Int.self, forKey: .Put1st)
+        self.Distance = try container.decode(Double.self, forKey: .Distance)
+        self.Putt1st = try container.decode(Double.self, forKey: .Putt1st)
+        self.Putt2nd = try container.decode(Double.self, forKey: .Putt2nd)
+        self.Putt3rd = try container.decode(Double.self, forKey: .Putt3rd)
         self.SandSave = try container.decode(Bool.self, forKey: .SandSave)
         self.UPDown = try container.decode(Bool.self, forKey: .UPDown)
         self.MatchScore = try container.decode(Int.self, forKey: .MatchScore)
@@ -84,7 +96,9 @@ struct CKCanScoreRec: Identifiable, Codable {
         self.record["Club"] = Club as CKRecordValue
         self.record["Hole"] = Hole as CKRecordValue
         self.record["Distance"] = Distance as CKRecordValue
-        self.record["Put1st"] = Put1st as CKRecordValue
+        self.record["Putt1st"] = Putt1st as CKRecordValue
+        self.record["Putt2nd"] = Putt2nd as CKRecordValue
+        self.record["Putt3rd"] = Putt3rd as CKRecordValue
         self.record["SandSave"] = SandSave as CKRecordValue
         self.record["UPDown"] = UPDown as CKRecordValue
         self.record["MatchScore"] = MatchScore as CKRecordValue
@@ -92,8 +106,10 @@ struct CKCanScoreRec: Identifiable, Codable {
     }
     func update(Hole: Int,
                 Club: Int,
-                Distance: Int,
-                Put1st: Int,
+                Distance: Double,
+                Putt1st: Double,
+                Putt2nd: Double,
+                Putt3rd: Double,
                 SandSave: Int,
                 UpDown: Int,
                 MatchScore: Int,
@@ -102,7 +118,9 @@ struct CKCanScoreRec: Identifiable, Codable {
         record["Hole"] = Hole
         record["Club"] = Club
         record["Distance"] = Distance
-        record["Put1st"] = Put1st
+        record["Putt1st"] = Putt1st
+        record["Putt2nd"] = Putt2nd
+        record["Putt3rd"] = Putt3rd
         record["SandSave"] = SandSave
         record["UpDown"] = UpDown
         record["MatchScore"] = MatchScore

@@ -17,8 +17,8 @@ enum DistanceUnit: String, CaseIterable, Identifiable {
 struct DistanceEntryView: View {
    var entryName  = "enter"
     @Binding var myDistance: Double
-    @State var selectedUnit: DistanceUnit
-    @State private var value: Double = 0
+    @Binding var selectedUnit: DistanceUnit
+//    @State private var value: Double = 0
     
     @State var input: String = ""
 
@@ -56,10 +56,25 @@ struct DistanceEntryView: View {
                         }
                     }
             }
+            .onAppear {
+                switch selectedUnit {
+                                            case .yards:
+                        input = String(format: "%.0f", myDistance)
+                                            case .feet:
+                                                
+                        input = String(format: "%.0f", myDistance)
+                                            case .inches:
+                                                
+                        input = String(format: "%.0f", myDistance * 12)
+                                            @unknown default:
+                                                break
+                                        }
+            }
     }
 }
 
 
 #Preview {
-    DistanceEntryView(myDistance: .constant(0.0), selectedUnit: .yards)
+    DistanceEntryView(myDistance: .constant(0.0), selectedUnit: .constant(DistanceUnit.yards))
 }
+

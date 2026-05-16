@@ -32,12 +32,26 @@ class ModelCanScore: ObservableObject {
     func previewData() {
         canScores.removeAll()
         for i in 1...18 {
-            let myRec = CKCanScoreRec(Hole: i, Club: "3-Wood", Distance: 200, Put1st: 20, SandSave: false, UPDown: false, MatchScore: 4, MatchUpDown: 1)!
+            let myRec = CKCanScoreRec(Hole: i, Club: "3-Wood", Distance: 200, Putt1st: 20, Putt2nd: 2, Putt3rd: 0, SandSave: false, UPDown: false, MatchScore: 4, MatchUpDown: 1)!
             canScores.append(myRec)
         }
     }
     
     @MainActor static let currentModel = ModelCanScore()
+    
+    func updateHoleDetails(hole: Int, club: String, distance: Double, putt1st: Double, putt2nd: Double, putt3rd: Double, sandsave: Bool) {
+        canScores[hole - 1].Club = club
+        canScores[hole - 1].Distance = distance
+        canScores[hole - 1].Putt1st = putt1st
+        canScores[hole - 1].Putt2nd = putt2nd
+        canScores[hole - 1].Putt3rd = putt3rd
+        canScores[hole - 1].SandSave = sandsave
+    }
+    func updateHoleEntry(hole: Int, updown: Bool, matchscore: Int, matchupdown: Int) {
+        canScores[hole - 1].UPDown = updown
+        canScores[hole - 1].MatchScore = matchscore
+        canScores[hole - 1].MatchUpDown = matchupdown
+    }
     
     func read() {
         do {

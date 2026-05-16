@@ -8,7 +8,7 @@
 import SwiftUI
 import CloudKit
 
-struct CKParRec: Identifiable, Codable {
+struct CKParRec: Identifiable, Codable, Comparable, Hashable {
     let id: CKRecord.ID
     let CourseID: Int
     let TeeID: Int
@@ -101,5 +101,25 @@ struct CKParRec: Identifiable, Codable {
     }
     static func example1() -> CKParRec {
         return CKParRec(CourseID: 1, TeeID: 1, Hole: 1, Par: 4, Handicap: 1, Yardage: 111)!
+    }
+}
+extension CKParRec {
+    static func == (lhs: CKParRec, rhs: CKParRec) -> Bool {
+        return lhs.CourseID == rhs.CourseID &&
+               lhs.TeeID == rhs.TeeID &&
+               lhs.Hole == rhs.Hole &&
+               lhs.Par == rhs.Par &&
+               lhs.Handicap == rhs.Handicap &&
+               lhs.Yardage == rhs.Yardage
+    }
+
+    static func < (lhs: CKParRec, rhs: CKParRec) -> Bool {
+        if lhs.CourseID != rhs.CourseID {
+            return lhs.CourseID < rhs.CourseID
+        }
+        if lhs.TeeID != rhs.TeeID {
+            return lhs.TeeID < rhs.TeeID
+        }
+        return lhs.Hole < rhs.Hole
     }
 }
