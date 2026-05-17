@@ -15,61 +15,70 @@ enum DistanceUnit: String, CaseIterable, Identifiable {
 }
 
 struct DistanceEntryView: View {
-   var entryName  = "enter"
+    var entryName  = "enter"
     @Binding var myDistance: Double
     @Binding var selectedUnit: DistanceUnit
-//    @State private var value: Double = 0
-    
+
     @State var input: String = ""
 
     var body: some View {
-            HStack {
-                Text(entryName)
-                    ForEach(DistanceUnit.allCases) { unit in
-                        Button(action: {
-                            selectedUnit = unit
-                        }) {
-                            HStack {
-                                Image(systemName: selectedUnit == unit ? "largecircle.fill.circle" : "circle")
-                                    .foregroundColor(selectedUnit == unit ? .blue : .gray)
-                                Text(unit.rawValue)
-                                    .foregroundColor(.primary)
-                            }
-//                            .padding(.horizontal)
-                        }
-                        .buttonStyle(.plain)
+        HStack {
+            Text(entryName)
+            ForEach(DistanceUnit.allCases) { unit in
+                Button(action: {
+                    selectedUnit = unit
+                    refreshInput()
+                }) {
+                    HStack {
+                        Image(systemName: selectedUnit == unit ? "largecircle.fill.circle" : "circle")
+                            .foregroundStyle(selectedUnit == unit ? .blue : .gray)
+                        Text(unit.rawValue)
+                            .foregroundStyle(.primary)
                     }
-                myTextField(value: $input, title: "", texttype: .Int)
-                    .padding(.horizontal)
-                    .background(Color(.systemGray6))
-                    .cornerRadius(8)
-                    .onChange(of: input) { newvalue in
-                        switch selectedUnit {
-                            case .yards:
-                                myDistance = (Double(newvalue) ?? 0) * 3
-                            case .feet:
-                                myDistance = (Double(newvalue) ?? 0)
-                            case .inches:
-                                myDistance = (Double(newvalue) ?? 0) / 12
-                            @unknown default:
-                                break
-                        }
-                    }
+                }
+                .buttonStyle(.plain)
             }
-            .onAppear {
-                switch selectedUnit {
-                                            case .yards:
-                        input = String(format: "%.0f", myDistance)
-                                            case .feet:
-                                                
-                        input = String(format: "%.0f", myDistance)
-                                            case .inches:
-                                                
-                        input = String(format: "%.0f", myDistance * 12)
-                                            @unknown default:
-                                                break
-                                        }
-            }
+            myTextField(value: Binding(
+                get: { input },
+                set: { newValue in
+                    input = newValue
+                    updateDistance(from: newValue)
+                }
+            ), title: "", texttype: .Int)
+            .padding(.horizontal)
+            .background(Color(.systemGray6))
+            .clipShape(.rect(cornerRadius: 8))
+        }
+        .onAppear {
+            refreshInput()
+        }
+    }
+
+    func refreshInput() {
+        let value = switch selectedUnit {
+        case .yards:
+            myDistance / 3
+        case .feet:
+            myDistance
+        case .inches:
+            myDistance * 12
+        @unknown default:
+            myDistance
+        }
+        input = value.formatted(.number.precision(.fractionLength(0)))
+    }
+
+    func updateDistance(from newValue: String) {
+        switch selectedUnit {
+        case .yards:
+            myDistance = (Double(newValue) ?? 0) * 3
+        case .feet:
+            myDistance = (Double(newValue) ?? 0)
+        case .inches:
+            myDistance = (Double(newValue) ?? 0) / 12
+        @unknown default:
+            break
+        }
     }
 }
 

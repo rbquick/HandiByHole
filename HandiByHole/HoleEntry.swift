@@ -232,14 +232,11 @@ extension HoleEntry {
     func newRound() {
         modelscore.scores.removeAll()
         modelcanscore.canScores.removeAll()
-        modelcandistance.canDistances.removeAll()
         for i in 1...18 {
             let rec = CKScoreRec(PlayerID: 32, GameID: 1, Hole: i, Score: modelpar.getPar(hole: i), Fairway: "H", Green: "H", Putts: 2, Bunker: 0, Penalty: 0)
             modelscore.scores.append(rec!)
             let rec1 = CKCanScoreRec(Hole: i, UPDown: false, MatchScore: modelpar.getPar(hole: i), MatchUpDown: 0)
             modelcanscore.canScores.append(rec1!)
-            let rec2 = CKCanDistance(Hole: i, Club: clubByHole[i - 1], Distance: Double(modelpar.getYardage(hole: i)))
-            modelcandistance.canDistances.append(rec2!)
         }
         fillInputs()
     }

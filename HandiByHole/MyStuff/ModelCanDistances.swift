@@ -30,12 +30,48 @@ class ModelCanDistance: ObservableObject {
         }
     }
 
-    func updateHoleDetails(hole: Int, club: String, distance: Double) {
-        guard canDistances.indices.contains(hole - 1) else { return }
+    func addHoleDetails(hole: Int, club: String, distance: Double) {
+        guard let newRec = CKCanDistance(Hole: hole, Club: club, Distance: distance) else { return }
+        canDistances.append(newRec)
+    }
 
-        if let updatedRec = canDistances[hole - 1].update(Hole: hole, Club: club, Distance: distance) {
-            canDistances[hole - 1] = updatedRec
+    func newestRecord(for hole: Int) -> CKCanDistance? {
+        canDistances
+            .filter { $0.Hole == hole }
+            .sorted(by: newestFirst)
+            .first
+    }
+
+    func newestRecord() -> CKCanDistance? {
+        canDistances
+            .sorted(by: newestFirst)
+            .first
+    }
+
+    func delete(records: [CKCanDistance]) {
+        let idsToDelete = Set(records.map(\.id))
+        canDistances.removeAll { idsToDelete.contains($0.id) }
+    }
+
+    func records(for club: String) -> [CKCanDistance] {
+        canDistances
+            .filter { $0.Club == club }
+            .sorted(by: newestFirst)
+    }
+
+    func averageDistance(for club: String) -> Double? {
+        let distances = canDistances
+            .filter { $0.Club == club }
+            .map { $0.Distance }
+        guard !distances.isEmpty else { return nil }
+        return distances.reduce(0, +) / Double(distances.count)
+    }
+
+    private func newestFirst(_ lhs: CKCanDistance, _ rhs: CKCanDistance) -> Bool {
+        if lhs.entryDate == rhs.entryDate {
+            return lhs.Hole > rhs.Hole
         }
+        return lhs.entryDate > rhs.entryDate
     }
 
     func read() {

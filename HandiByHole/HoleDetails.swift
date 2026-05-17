@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+
 enum GolfClub: String, CaseIterable, Identifiable {
     case none = ""
     case driver = "Driver"
@@ -21,7 +22,7 @@ enum GolfClub: String, CaseIterable, Identifiable {
     case pWedge = "P Wedge"
     case aWedge = "A Wedge"
     case lob60 = "60 Deg"
-    
+
     var id: String { self.rawValue }
 }
 
@@ -31,79 +32,153 @@ struct HoleDetails: View {
     @EnvironmentObject var modelcandistance: ModelCanDistance
     @Environment(\.dismiss) private var dismiss
 
-    @State var InputClub: GolfClub = .threeWood // this is setup by hole from modelcanscore
+    @State var InputClub: GolfClub = .threeWood
     @State var InputDistanceToGreen: Double = 0.0
-    @State var unitToGreen: DistanceUnit = .yards
+    @State var distanceText: String = ""
+    @State var filteredDistanceRecords: [CKCanDistance] = []
+
     var body: some View {
         VStack {
             HeaderView()
-            Spacer()
-            // Unique sorted courses for picker
-            let uniqueCourseIDs = Array(Set(modelpar.pars.map { $0.CourseID })).sorted()
-                        
-            Picker("Course", selection: $modelpar.currentCoureID) {
-                ForEach(uniqueCourseIDs, id: \.self) { rec in
-                    Text("Course \(rec)").tag(rec)
-                            }
-                        }
 
-                        // Filter teeIDs for selected course
-                    let teeIDs = modelpar.pars
+            let uniqueCourseIDs = Array(Set(modelpar.pars.map { $0.CourseID })).sorted()
+            let teeIDs = modelpar.pars
                 .filter { $0.CourseID == modelpar.currentCoureID }
-                            .map { $0.TeeID }
-                        
-                        // Unique and sorted teeIDs for selected course
-                        let uniqueTeeIDs = Array(Set(teeIDs)).sorted()
-                        
-            Picker("Tee", selection: $modelpar.currentTeeID) {
-                            ForEach(uniqueTeeIDs, id: \.self) { teeID in
-                                Text("Tee \(teeID)").tag(teeID)
-                            }
-                        }
-            Text("Yardage \(modelpar.getYardage(hole: modelscore.currentHole))  ")
-            Spacer()
+                .map { $0.TeeID }
+            let uniqueTeeIDs = Array(Set(teeIDs)).sorted()
+
             HStack {
-                Text("Select a club")
+                Text("Course")
+                Picker("Course", selection: $modelpar.currentCoureID) {
+                    ForEach(uniqueCourseIDs, id: \.self) { rec in
+                        Text("\(rec)").tag(rec)
+                    }
+                }
+                .frame(maxWidth: 80)
+
+                Text("Tee")
+                Picker("Tee", selection: $modelpar.currentTeeID) {
+                    ForEach(uniqueTeeIDs, id: \.self) { teeID in
+                        Text("\(teeID)").tag(teeID)
+                    }
+                }
+                .frame(maxWidth: 80)
+
                 Spacer()
-                Picker("Select a club", selection: $InputClub) {
+                Text("Yds \(modelpar.getYardage(hole: modelscore.currentHole))")
+            }
+
+            HStack {
+                Text("Club")
+                Picker("Club", selection: Binding(
+                    get: { InputClub },
+                    set: { newClub in
+                        InputClub = newClub
+                        filteredDistanceRecords = modelcandistance.records(for: newClub.rawValue)
+                    }
+                )) {
                     ForEach(GolfClub.allCases) { club in
-                        Text(club.rawValue.isEmpty ? "None" : club.rawValue)
+                        Text(clubPickerLabel(for: club))
                             .tag(club)
                     }
                 }
-                .frame(width: 130, height: 30)
+                .frame(width: 220)
                 .border(.black, width: 1)
+                
+                Text("Yds")
+                TextField("0", text: Binding(
+                    get: { distanceText },
+                    set: { newValue in
+                        setDistanceText(newValue)
+                    }
+                ))
+                .keyboardType(.numberPad)
+                .textFieldStyle(.roundedBorder)
             }
-            
-            Spacer()
-            DistanceEntryView(entryName: "to Green", myDistance: $InputDistanceToGreen, selectedUnit: $unitToGreen)
-                .frame( height: 30)
-            Text("drive \(modelpar.getYardage(hole: modelscore.currentHole) - (Int(InputDistanceToGreen) / 3)) ")
-            
-            Spacer()
-            Button("Close") {
-                dismiss()
+            .frame(height: 36)
+
+            List {
+                ForEach(filteredDistanceRecords) { record in
+                    HStack {
+                        Text(record.entryDate.formatted(date: .numeric, time: .standard))
+                        Spacer()
+                        Text("Hole \(record.Hole)")
+                        Spacer()
+                        Text(record.Distance, format: .number.precision(.fractionLength(0)))
+                        Text("yds")
+                    }
+                }
+                .onDelete(perform: deleteDistanceRecords)
             }
-            .padding()
-            .background(Color.blue)
-            .foregroundColor(.white)
-            .cornerRadius(8)
-        }
-        .onDisappear {
-            print("HoleDetails saved")
-            modelcandistance.updateHoleDetails(hole: modelscore.currentHole, club: InputClub.rawValue, distance: InputDistanceToGreen)
-            modelcandistance.save()
+
+            HStack {
+                Button("Cancel") {
+                    dismiss()
+                }
+                .padding()
+                .background(Color.gray)
+                .foregroundStyle(.white)
+                .clipShape(.rect(cornerRadius: 8))
+
+                Spacer()
+
+                Button("Save") {
+                    saveDistanceRecord()
+                    dismiss()
+                }
+                .padding()
+                .background(Color.blue)
+                .foregroundStyle(.white)
+                .clipShape(.rect(cornerRadius: 8))
+            }
         }
         .onAppear {
-            // If you want to set based on a String, convert:
-            let currentClubString = modelcandistance.canDistances[modelscore.currentHole - 1].Club
-            if let clubValue = GolfClub(rawValue: currentClubString) {
-                InputClub = clubValue
-            }
-            InputDistanceToGreen = modelcandistance.canDistances[modelscore.currentHole - 1].Distance / 3
+            loadInitialRecord()
             print("HoleDetails appeard")
         }
         .padding()
+    }
+
+    func loadInitialRecord() {
+        if let initialRecord = modelcandistance.newestRecord(for: modelscore.currentHole) ?? modelcandistance.newestRecord() {
+            InputDistanceToGreen = initialRecord.Distance
+            distanceText = initialRecord.Distance.formatted(.number.precision(.fractionLength(0)))
+            if let clubValue = GolfClub(rawValue: initialRecord.Club) {
+                InputClub = clubValue
+            }
+            filteredDistanceRecords = modelcandistance.records(for: InputClub.rawValue)
+        } else {
+            setDistanceText("")
+            filteredDistanceRecords = modelcandistance.records(for: InputClub.rawValue)
+        }
+    }
+
+    func clubPickerLabel(for club: GolfClub) -> String {
+        let clubName = club.rawValue.isEmpty ? "None" : club.rawValue
+        guard let averageDistance = modelcandistance.averageDistance(for: club.rawValue) else {
+            return clubName
+        }
+        let averageText = averageDistance.formatted(.number.precision(.fractionLength(0)))
+        return "\(clubName) - Avg \(averageText) yds"
+    }
+
+    func setDistanceText(_ newValue: String) {
+        let numericValue = newValue.filter { $0.isNumber }
+        distanceText = numericValue
+        InputDistanceToGreen = Double(numericValue) ?? 0
+    }
+
+    func saveDistanceRecord() {
+        print("HoleDetails saved")
+        modelcandistance.addHoleDetails(hole: modelscore.currentHole, club: InputClub.rawValue, distance: InputDistanceToGreen)
+        modelcandistance.save()
+    }
+
+    func deleteDistanceRecords(at offsets: IndexSet) {
+        let recordsToDelete = offsets.map { filteredDistanceRecords[$0] }
+        modelcandistance.delete(records: recordsToDelete)
+        modelcandistance.save()
+        filteredDistanceRecords = modelcandistance.records(for: InputClub.rawValue)
     }
 }
 
