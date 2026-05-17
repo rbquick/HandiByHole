@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var modelscore: ModelScore
     @EnvironmentObject var modelcanscore: ModelCanScore
+    @EnvironmentObject var modelcandistance: ModelCanDistance
     @EnvironmentObject var modelpar: ModelPar
     
     var body: some View {
@@ -24,6 +25,7 @@ struct ContentView: View {
     ContentView()
         .environmentObject(ModelScore())
         .environmentObject(ModelCanScore())
+        .environmentObject(ModelCanDistance())
         .environmentObject(ModelPar())
 
 }

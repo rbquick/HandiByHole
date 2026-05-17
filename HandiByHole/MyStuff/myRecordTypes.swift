@@ -18,4 +18,5 @@ import Foundation
       case Trivia
       case Environment
       case CanScore
+      case CanDistance
   }

@@ -28,7 +28,7 @@ enum GolfClub: String, CaseIterable, Identifiable {
 struct HoleDetails: View {
     @EnvironmentObject var modelscore: ModelScore
     @EnvironmentObject var modelpar: ModelPar
-    @EnvironmentObject var modelcanscore: ModelCanScore
+    @EnvironmentObject var modelcandistance: ModelCanDistance
     @Environment(\.dismiss) private var dismiss
 
     @State var InputClub: GolfClub = .threeWood // this is setup by hole from modelcanscore
@@ -91,15 +91,16 @@ struct HoleDetails: View {
         }
         .onDisappear {
             print("HoleDetails saved")
-            modelcanscore.updateHoleDetails(hole: modelscore.currentHole, club: InputClub.rawValue, distance: InputDistanceToGreen)
+            modelcandistance.updateHoleDetails(hole: modelscore.currentHole, club: InputClub.rawValue, distance: InputDistanceToGreen)
+            modelcandistance.save()
         }
         .onAppear {
             // If you want to set based on a String, convert:
-            let currentClubString = modelcanscore.canScores[modelscore.currentHole - 1].Club
+            let currentClubString = modelcandistance.canDistances[modelscore.currentHole - 1].Club
             if let clubValue = GolfClub(rawValue: currentClubString) {
                 InputClub = clubValue
             }
-            InputDistanceToGreen = modelcanscore.canScores[modelscore.currentHole - 1].Distance / 3
+            InputDistanceToGreen = modelcandistance.canDistances[modelscore.currentHole - 1].Distance / 3
             print("HoleDetails appeard")
         }
         .padding()
@@ -111,4 +112,5 @@ struct HoleDetails: View {
         .environmentObject(ModelScore())
         .environmentObject(ModelPar())
         .environmentObject(ModelCanScore())
+        .environmentObject(ModelCanDistance())
 }
