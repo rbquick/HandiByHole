@@ -23,6 +23,11 @@ struct ScoreCardView: View {
     var body: some View {
         Spacer()
         VStack {
+            HStack {
+                Spacer()
+                Text(Date().formatted(.dateTime.year().month().day()))
+                Text(" ")
+            }
             HoleRowView(title: "Hole", numbers: Array(1...9), trailingLabels: ["OUT"], myColor: modelcanscore.matchFront < 0 ? .red: .blue)
             Text(" ")
             ParRowView(title: "Par", numbers: getPars(holes: 1), rating: Array(repeating: "", count: 9),trailingLabels: [35])
