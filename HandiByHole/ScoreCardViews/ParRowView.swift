@@ -28,9 +28,14 @@ struct ParRowView: View {
                     
                     ForEach(numbers.indices, id: \.self) { ind in
                         let num = numbers[ind]
-                        if title == "Par" {
-                            Text("\(num)")
-                                .frame(width: baseWidth, height: 44)
+                        if title == "Par" || title == "Putts" {
+                            if num == 0 {
+                                Text(" ")
+                                    .frame(width: baseWidth, height: 44)
+                            } else {
+                                Text("\(num)")
+                                    .frame(width: baseWidth, height: 44)
+                            }
                         } else {
                             
                             
@@ -106,3 +111,4 @@ struct ParRowView: View {
 //        trailingLabels[0] = "\(myScore)"
 //    }
 //}
+

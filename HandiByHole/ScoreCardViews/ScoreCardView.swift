@@ -20,6 +20,8 @@ struct ScoreCardView: View {
     @State var upDownFront: Int = 0
     @State var upDownBack: Int = 0
     
+    @State var showPutts: Bool = false
+    
     var body: some View {
         Spacer()
         VStack {
@@ -29,12 +31,17 @@ struct ScoreCardView: View {
                 Text(" ")
             }
             HoleRowView(title: "Hole", numbers: Array(1...9), trailingLabels: ["OUT"], myColor: modelcanscore.matchFront < 0 ? .red: .blue)
-            Text(" ")
+            Divider()
             ParRowView(title: "Par", numbers: getPars(holes: 1), rating: Array(repeating: "", count: 9),trailingLabels: [35])
+            if showPutts {
+                Text(" ")
+                ParRowView(title: "Putts", numbers: getPutts(holes: 1), rating: Array(repeating: "", count: 9),trailingLabels: [modelscore.puttsFront9])
+            }
             Text(" ")
             let (frontScores, frontRatings) = getScores(holes: 1)
             let (frontcanScores, frontcanRatings) = getcanScores(holes: 1)
             ParRowView(title: "Me", numbers: frontScores, rating: frontRatings, trailingLabels: [modelscore.scoreFront9])
+
             Text(" ")
             if modelcanscore.showMatch {
                 
@@ -46,6 +53,10 @@ struct ScoreCardView: View {
             HoleRowView(title: "Hole", numbers: Array(10...18), trailingLabels: ["IN", "TOT"], myColor: modelcanscore.matchBack < 0 ? .red: .blue)
             Text(" ")
             ParRowView(title: "Par", numbers: getPars(holes: 10), rating: Array(repeating: "", count: 9), trailingLabels: [35, 70])
+            if showPutts {
+                Text(" ")
+                ParRowView(title: "Putts", numbers: getPutts(holes: 10), rating: Array(repeating: "", count: 9),trailingLabels: [modelscore.puttsBack9, modelscore.puttsBack18])
+            }
             Text(" ")
             let (backScores, backRatings) = getScores(holes: 10)
             let (backcanScores, backcanRatings) = getcanScores(holes: 10)
@@ -61,13 +72,27 @@ struct ScoreCardView: View {
             modelcanscore.currentHole = modelscore.currentHole
         }
         Spacer()
-        Button("Close") {
-            dismiss()
+        HStack {
+            Spacer()
+            Button(showPutts ? "hide Putts" : "show Putts") {
+                showPutts.toggle()
+            }
+            .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(8)
+            Spacer()
+            Button("Close") {
+                dismiss()
+            }
+            .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(8)
+
+            Spacer()
         }
-        .padding()
-        .background(Color.blue)
-        .foregroundColor(.white)
-        .cornerRadius(8)
+        
     }
     
 }
@@ -85,6 +110,13 @@ extension ScoreCardView {
             pars.append(modelpar.getPar(hole: ind+holes))
         }
         return pars
+    }
+    func getPutts(holes: Int) -> [Int] {
+        var putts: [Int] = []
+        for ind in 0...8 {
+            putts.append(modelscore.scores[ind+holes-1].Putts)
+        }
+        return putts
     }
     func getCanScore(holes: Int) -> [Int] {
         var scores: [Int] = []

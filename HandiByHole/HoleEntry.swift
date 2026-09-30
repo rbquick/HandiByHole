@@ -67,6 +67,12 @@ struct HoleEntry: View {
                 Spacer()
                 ButtonCounter(count: $InputBunker)
             }
+            .onChange(of: InputFairway) { _ in
+                checkBunker()
+            }
+            .onChange(of: InputBunker) { _ in
+                checkBunker()
+            }
             HStack {
                 Text("Penalties: ")
                 Spacer()
@@ -147,6 +153,9 @@ struct HoleEntry: View {
                         update()
                         modelscore.currentHole += 1
                         modelcanscore.currentHole += 1
+                        if modelscore.scores[modelscore.currentHole - 1].Putts == 0 {
+                            modelscore.scores[modelscore.currentHole - 1].Putts = 2
+                        }
                         fillInputs()
                     }
                     .frame(maxWidth: .infinity, minHeight: 44)
@@ -184,6 +193,11 @@ struct HoleEntry: View {
         .environmentObject(ModelPar())
 }
 extension HoleEntry {
+    func checkBunker() {
+        if InputBunker == 0 && InputFairway == "B" {
+            InputBunker = 1
+        }
+    }
     func calcUpDown()  {
         modelcanscore.match18 = 0
         modelcanscore.matchFront = 0
@@ -233,7 +247,7 @@ extension HoleEntry {
         modelscore.scores.removeAll()
         modelcanscore.canScores.removeAll()
         for i in 1...18 {
-            let rec = CKScoreRec(PlayerID: 32, GameID: 1, Hole: i, Score: modelpar.getPar(hole: i), Fairway: "H", Green: "H", Putts: 2, Bunker: 0, Penalty: 0)
+            let rec = CKScoreRec(PlayerID: 32, GameID: 1, Hole: i, Score: modelpar.getPar(hole: i), Fairway: "H", Green: "H", Putts: i == 1 ? 2 : 0, Bunker: 0, Penalty: 0)
             modelscore.scores.append(rec!)
             let rec1 = CKCanScoreRec(Hole: i, UPDown: false, MatchScore: modelpar.getPar(hole: i), MatchUpDown: 0)
             modelcanscore.canScores.append(rec1!)
@@ -250,6 +264,7 @@ extension HoleEntry {
         InputUPDown = modelcanscore.canScores[modelscore.currentHole - 1].UPDown
         InputMatchscore = modelcanscore.canScores[modelscore.currentHole - 1].MatchScore
         InputMatchUpDown = modelcanscore.canScores[modelscore.currentHole - 1].MatchUpDown
+        checkBunker()
         calcUpDown()
     }
     func saveJASON() {
@@ -281,3 +296,4 @@ extension HoleEntry {
         }
     }
 }
+
