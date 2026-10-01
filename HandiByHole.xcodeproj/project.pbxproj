@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXFileReference section */
@@ -11,7 +11,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		7172F76C2DBE5111004EC87A /* Exceptions for "HandiByHole" folder in "				" target */ = {
+		7172F76C2DBE5111004EC87A /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -21,14 +21,7 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		7172F7512DBD3F2F004EC87A /* HandiByHole */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				7172F76C2DBE5111004EC87A /* Exceptions for "HandiByHole" folder in "				" target */,
-			);
-			path = HandiByHole;
-			sourceTree = "<group>";
-		};
+		7172F7512DBD3F2F004EC87A /* HandiByHole */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (7172F76C2DBE5111004EC87A /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = HandiByHole; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +42,7 @@
 				7172F7502DBD3F2F004EC87A /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		7172F7502DBD3F2F004EC87A /* Products */ = {
 			isa = PBXGroup;
@@ -99,6 +93,7 @@
 				};
 			};
 			buildConfigurationList = 7172F74A2DBD3F2F004EC87A /* Build configuration list for PBXProject "HandiByHole" */;
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -107,7 +102,6 @@
 			);
 			mainGroup = 7172F7462DBD3F2F004EC87A;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 7172F7502DBD3F2F004EC87A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
