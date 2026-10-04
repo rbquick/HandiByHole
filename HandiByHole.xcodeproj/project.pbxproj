@@ -11,14 +11,61 @@
 		71DEE9AC306EEB4700CF1E2A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DEE9AB306EEB4700CF1E2A /* ContentView.swift */; };
 		71DEE9AE306EEB4900CF1E2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71DEE9AD306EEB4900CF1E2A /* Assets.xcassets */; };
 		71DEE9B1306EEB4900CF1E2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71DEE9B0306EEB4900CF1E2A /* Preview Assets.xcassets */; };
+		71E9B5D8306EEE19000D759D /* HoleEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9B5D7306EEE19000D759D /* HoleEntry.swift */; };
+		71E9B5DA306EF10E000D759D /* CKScoreRec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9B5D9306EF10E000D759D /* CKScoreRec.swift */; };
+		71E9B5DC306EF125000D759D /* DistanceEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9B5DB306EF125000D759D /* DistanceEntryView.swift */; };
+		71E9B5DE306EF139000D759D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9B5DD306EF139000D759D /* HeaderView.swift */; };
+		71E9B5E0306EF147000D759D /* HoleDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9B5DF306EF147000D759D /* HoleDetails.swift */; };
+		71E9B5E7306EF1D9000D759D /* ModelPar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9B5E3306EF1D9000D759D /* ModelPar.swift */; };
+		71E9B5E8306EF1D9000D759D /* ModelCanScores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9B5E4306EF1D9000D759D /* ModelCanScores.swift */; };
+		71E9B5E9306EF1D9000D759D /* ModelCanDistances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9B5E5306EF1D9000D759D /* ModelCanDistances.swift */; };
+		71E9B5EA306EF1D9000D759D /* ModelScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9B5E6306EF1D9000D759D /* ModelScore.swift */; };
+		71E9B5F1306EF22B000D759D /* CKParRec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9B5EC306EF22B000D759D /* CKParRec.swift */; };
+		71E9B5F2306EF22B000D759D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9B5ED306EF22B000D759D /* Logger.swift */; };
+		71E9B5F3306EF22B000D759D /* CKCanDistances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9B5EE306EF22B000D759D /* CKCanDistances.swift */; };
+		71E9B5F4306EF22B000D759D /* CKCanScores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9B5EF306EF22B000D759D /* CKCanScores.swift */; };
+		71E9B5F5306EF22B000D759D /* JasonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9B5F0306EF22B000D759D /* JasonFunctions.swift */; };
+		71E9B5F9306EF247000D759D /* MyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9B5F6306EF247000D759D /* MyTextField.swift */; };
+		71E9B5FA306EF247000D759D /* myRecordTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9B5F7306EF247000D759D /* myRecordTypes.swift */; };
+		71E9B5FB306EF247000D759D /* myFileExists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9B5F8306EF247000D759D /* myFileExists.swift */; };
+		71E9B5FD306EF2F7000D759D /* ButtonCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9B5FC306EF2F7000D759D /* ButtonCounter.swift */; };
+		71E9B600306EF31B000D759D /* AcurracySelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9B5FF306EF31B000D759D /* AcurracySelector.swift */; };
+		71E9B602306EF32A000D759D /* YNSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9B601306EF32A000D759D /* YNSelector.swift */; };
+		71E9B606306EFAA6000D759D /* HolesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9B603306EFAA6000D759D /* HolesRowView.swift */; };
+		71E9B607306EFAA6000D759D /* ParRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9B604306EFAA6000D759D /* ParRowView.swift */; };
+		71E9B608306EFAA6000D759D /* ScoreCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E9B605306EFAA6000D759D /* ScoreCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		71DEE9A6306EEB4700CF1E2A /* HandiByHole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandiByHole.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71DEE9A9306EEB4700CF1E2A /* HandiByHoleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandiByHoleApp.swift; sourceTree = "<group>"; };
-		71DEE9AB306EEB4700CF1E2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		71DEE9AB306EEB4700CF1E2A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "Preview Content/Preview Assets.xcassets/ContentView.swift"; sourceTree = "<group>"; };
 		71DEE9AD306EEB4900CF1E2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71DEE9B0306EEB4900CF1E2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		71E9B5D7306EEE19000D759D /* HoleEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoleEntry.swift; sourceTree = "<group>"; };
+		71E9B5D9306EF10E000D759D /* CKScoreRec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKScoreRec.swift; sourceTree = "<group>"; };
+		71E9B5DB306EF125000D759D /* DistanceEntryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceEntryView.swift; sourceTree = "<group>"; };
+		71E9B5DD306EF139000D759D /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		71E9B5DF306EF147000D759D /* HoleDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoleDetails.swift; sourceTree = "<group>"; };
+		71E9B5E3306EF1D9000D759D /* ModelPar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelPar.swift; sourceTree = "<group>"; };
+		71E9B5E4306EF1D9000D759D /* ModelCanScores.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelCanScores.swift; sourceTree = "<group>"; };
+		71E9B5E5306EF1D9000D759D /* ModelCanDistances.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelCanDistances.swift; sourceTree = "<group>"; };
+		71E9B5E6306EF1D9000D759D /* ModelScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelScore.swift; sourceTree = "<group>"; };
+		71E9B5EC306EF22B000D759D /* CKParRec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKParRec.swift; sourceTree = "<group>"; };
+		71E9B5ED306EF22B000D759D /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		71E9B5EE306EF22B000D759D /* CKCanDistances.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKCanDistances.swift; sourceTree = "<group>"; };
+		71E9B5EF306EF22B000D759D /* CKCanScores.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CKCanScores.swift; sourceTree = "<group>"; };
+		71E9B5F0306EF22B000D759D /* JasonFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JasonFunctions.swift; sourceTree = "<group>"; };
+		71E9B5F6306EF247000D759D /* MyTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTextField.swift; sourceTree = "<group>"; };
+		71E9B5F7306EF247000D759D /* myRecordTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myRecordTypes.swift; sourceTree = "<group>"; };
+		71E9B5F8306EF247000D759D /* myFileExists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myFileExists.swift; sourceTree = "<group>"; };
+		71E9B5FC306EF2F7000D759D /* ButtonCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCounter.swift; sourceTree = "<group>"; };
+		71E9B5FF306EF31B000D759D /* AcurracySelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcurracySelector.swift; sourceTree = "<group>"; };
+		71E9B601306EF32A000D759D /* YNSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YNSelector.swift; sourceTree = "<group>"; };
+		71E9B603306EFAA6000D759D /* HolesRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HolesRowView.swift; sourceTree = "<group>"; };
+		71E9B604306EFAA6000D759D /* ParRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParRowView.swift; sourceTree = "<group>"; };
+		71E9B605306EFAA6000D759D /* ScoreCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreCardView.swift; sourceTree = "<group>"; };
+		71E9B60A3071A15F000D759D /* HandiByHole.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HandiByHole.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +98,15 @@
 		71DEE9A8306EEB4700CF1E2A /* HandiByHole */ = {
 			isa = PBXGroup;
 			children = (
+				71E9B60A3071A15F000D759D /* HandiByHole.entitlements */,
+				71E9B609306EFAB4000D759D /* ScoreCardViews */,
+				71E9B5FE306EF2FD000D759D /* Support Controls */,
+				71E9B5EB306EF1E8000D759D /* MyStuff */,
+				71E9B5DF306EF147000D759D /* HoleDetails.swift */,
+				71E9B5DD306EF139000D759D /* HeaderView.swift */,
+				71E9B5DB306EF125000D759D /* DistanceEntryView.swift */,
+				71E9B5D9306EF10E000D759D /* CKScoreRec.swift */,
+				71E9B5D7306EEE19000D759D /* HoleEntry.swift */,
 				71DEE9A9306EEB4700CF1E2A /* HandiByHoleApp.swift */,
 				71DEE9AB306EEB4700CF1E2A /* ContentView.swift */,
 				71DEE9AD306EEB4900CF1E2A /* Assets.xcassets */,
@@ -65,6 +121,45 @@
 				71DEE9B0306EEB4900CF1E2A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		71E9B5EB306EF1E8000D759D /* MyStuff */ = {
+			isa = PBXGroup;
+			children = (
+				71E9B5EE306EF22B000D759D /* CKCanDistances.swift */,
+				71E9B5EF306EF22B000D759D /* CKCanScores.swift */,
+				71E9B5EC306EF22B000D759D /* CKParRec.swift */,
+				71E9B5F0306EF22B000D759D /* JasonFunctions.swift */,
+				71E9B5ED306EF22B000D759D /* Logger.swift */,
+				71E9B5E5306EF1D9000D759D /* ModelCanDistances.swift */,
+				71E9B5E4306EF1D9000D759D /* ModelCanScores.swift */,
+				71E9B5E3306EF1D9000D759D /* ModelPar.swift */,
+				71E9B5E6306EF1D9000D759D /* ModelScore.swift */,
+				71E9B5F8306EF247000D759D /* myFileExists.swift */,
+				71E9B5F7306EF247000D759D /* myRecordTypes.swift */,
+				71E9B5F6306EF247000D759D /* MyTextField.swift */,
+			);
+			path = MyStuff;
+			sourceTree = "<group>";
+		};
+		71E9B5FE306EF2FD000D759D /* Support Controls */ = {
+			isa = PBXGroup;
+			children = (
+				71E9B5FF306EF31B000D759D /* AcurracySelector.swift */,
+				71E9B5FC306EF2F7000D759D /* ButtonCounter.swift */,
+				71E9B601306EF32A000D759D /* YNSelector.swift */,
+			);
+			path = "Support Controls";
+			sourceTree = "<group>";
+		};
+		71E9B609306EFAB4000D759D /* ScoreCardViews */ = {
+			isa = PBXGroup;
+			children = (
+				71E9B603306EFAA6000D759D /* HolesRowView.swift */,
+				71E9B604306EFAA6000D759D /* ParRowView.swift */,
+				71E9B605306EFAA6000D759D /* ScoreCardView.swift */,
+			);
+			path = ScoreCardViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +233,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				71DEE9AC306EEB4700CF1E2A /* ContentView.swift in Sources */,
+				71E9B5E8306EF1D9000D759D /* ModelCanScores.swift in Sources */,
+				71E9B5F3306EF22B000D759D /* CKCanDistances.swift in Sources */,
+				71E9B5F9306EF247000D759D /* MyTextField.swift in Sources */,
+				71E9B5DE306EF139000D759D /* HeaderView.swift in Sources */,
+				71E9B5E9306EF1D9000D759D /* ModelCanDistances.swift in Sources */,
 				71DEE9AA306EEB4700CF1E2A /* HandiByHoleApp.swift in Sources */,
+				71E9B5D8306EEE19000D759D /* HoleEntry.swift in Sources */,
+				71E9B608306EFAA6000D759D /* ScoreCardView.swift in Sources */,
+				71E9B606306EFAA6000D759D /* HolesRowView.swift in Sources */,
+				71E9B607306EFAA6000D759D /* ParRowView.swift in Sources */,
+				71E9B5F5306EF22B000D759D /* JasonFunctions.swift in Sources */,
+				71E9B5E7306EF1D9000D759D /* ModelPar.swift in Sources */,
+				71E9B5FD306EF2F7000D759D /* ButtonCounter.swift in Sources */,
+				71E9B5EA306EF1D9000D759D /* ModelScore.swift in Sources */,
+				71E9B5DA306EF10E000D759D /* CKScoreRec.swift in Sources */,
+				71E9B5FA306EF247000D759D /* myRecordTypes.swift in Sources */,
+				71E9B5F4306EF22B000D759D /* CKCanScores.swift in Sources */,
+				71E9B5FB306EF247000D759D /* myFileExists.swift in Sources */,
+				71E9B5DC306EF125000D759D /* DistanceEntryView.swift in Sources */,
+				71E9B602306EF32A000D759D /* YNSelector.swift in Sources */,
+				71E9B5F2306EF22B000D759D /* Logger.swift in Sources */,
+				71E9B5F1306EF22B000D759D /* CKParRec.swift in Sources */,
+				71E9B5E0306EF147000D759D /* HoleDetails.swift in Sources */,
+				71E9B600306EF31B000D759D /* AcurracySelector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +382,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HandiByHole/HandiByHole.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HandiByHole/Preview Content\"";
@@ -293,6 +412,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HandiByHole/HandiByHole.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HandiByHole/Preview Content\"";
