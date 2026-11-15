@@ -61,6 +61,23 @@ class ModelPar: ObservableObject {
     var yardageBack18:  Int { return pars.reduce(0, {$0 + $1.Yardage}) }
 
     func read() {
+        // Attempt to load from app bundle first
+        if let url = Bundle.main.url(forResource: "pars", withExtension: "json") {
+            do {
+                let data = try Data(contentsOf: url)
+                let decoder = JSONDecoder()
+                let decoded = try decoder.decode([CKParRec].self, from: data)
+                self.pars = decoded
+                print("Pars Read from bundle: \(pars.count)")
+                return
+            } catch {
+                print("Failed to decode pars.json from bundle: \(error)")
+            }
+        } else {
+            print("pars.json not found in bundle")
+        }
+
+        // Fallback to existing mechanism or preview data
         do {
             try readFromJSONFile(filename: JSONFilename, model: &pars)
             print("Pars Read Maybe \(pars.count)")

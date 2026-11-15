@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		7172F74F2DBD3F2F004EC87A /* 				.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "\t\t\t\t.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7172F74F2DBD3F2F004EC87A /* HandiByHole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandiByHole.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -16,7 +16,7 @@
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 7172F74E2DBD3F2F004EC87A /* 				 */;
+			target = 7172F74E2DBD3F2F004EC87A /* HandiByHole */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -47,7 +47,7 @@
 		7172F7502DBD3F2F004EC87A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7172F74F2DBD3F2F004EC87A /* 				.app */,
+				7172F74F2DBD3F2F004EC87A /* HandiByHole.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,9 +55,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7172F74E2DBD3F2F004EC87A /* 				 */ = {
+		7172F74E2DBD3F2F004EC87A /* HandiByHole */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7172F75A2DBD3F30004EC87A /* Build configuration list for PBXNativeTarget "				" */;
+			buildConfigurationList = 7172F75A2DBD3F30004EC87A /* Build configuration list for PBXNativeTarget "HandiByHole" */;
 			buildPhases = (
 				7172F74B2DBD3F2F004EC87A /* Sources */,
 				7172F74C2DBD3F2F004EC87A /* Frameworks */,
@@ -70,11 +70,11 @@
 			fileSystemSynchronizedGroups = (
 				7172F7512DBD3F2F004EC87A /* HandiByHole */,
 			);
-			name = "				";
+			name = HandiByHole;
 			packageProductDependencies = (
 			);
 			productName = HandiByHole;
-			productReference = 7172F74F2DBD3F2F004EC87A /* 				.app */;
+			productReference = 7172F74F2DBD3F2F004EC87A /* HandiByHole.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -93,7 +93,7 @@
 				};
 			};
 			buildConfigurationList = 7172F74A2DBD3F2F004EC87A /* Build configuration list for PBXProject "HandiByHole" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -106,7 +106,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7172F74E2DBD3F2F004EC87A /* 				 */,
+				7172F74E2DBD3F2F004EC87A /* HandiByHole */,
 			);
 		};
 /* End PBXProject section */
@@ -341,7 +341,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7172F75A2DBD3F30004EC87A /* Build configuration list for PBXNativeTarget "				" */ = {
+		7172F75A2DBD3F30004EC87A /* Build configuration list for PBXNativeTarget "HandiByHole" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7172F75B2DBD3F30004EC87A /* Debug */,

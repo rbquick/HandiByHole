@@ -1,0 +1,2603 @@
+[
+  {
+    "Hole" : 1,
+    "Par" : 5,
+    "Handicap" : 4,
+    "TeeID" : 8,
+    "Yardage" : 447,
+    "id" : "03E91C2B-045F-4715-9AB3-885E07DE0AD0",
+    "CourseID" : 6
+  },
+  {
+    "id" : "047D075D-9ACA-46A7-B42C-A44D5530CE51",
+    "Par" : 4,
+    "Yardage" : 342,
+    "Hole" : 1,
+    "TeeID" : 1,
+    "CourseID" : 7,
+    "Handicap" : 11
+  },
+  {
+    "Hole" : 1,
+    "Par" : 4,
+    "Handicap" : 15,
+    "TeeID" : 1,
+    "Yardage" : 316,
+    "id" : "0C0C81B9-9FE5-3CFB-2701-3DCF4945942C",
+    "CourseID" : 5
+  },
+  {
+    "Hole" : 1,
+    "Par" : 4,
+    "Handicap" : 9,
+    "TeeID" : 1,
+    "Yardage" : 340,
+    "id" : "0FB2BB8A-BC6A-45A6-93C1-9B1A49BA0709",
+    "CourseID" : 8
+  },
+  {
+    "Hole" : 1,
+    "Par" : 5,
+    "Handicap" : 1,
+    "TeeID" : 4,
+    "Yardage" : 462,
+    "id" : "14473B62-7981-4900-84ED-8C604335CC9B",
+    "CourseID" : 3
+  },
+  {
+    "Hole" : 1,
+    "Par" : 5,
+    "Handicap" : 4,
+    "TeeID" : 1,
+    "Yardage" : 440,
+    "id" : "1D42C57B-3EBD-4FDF-8F0C-D09AD7AF0DBD",
+    "CourseID" : 10
+  },
+  {
+    "Hole" : 1,
+    "Par" : 5,
+    "Handicap" : 6,
+    "TeeID" : 0,
+    "Yardage" : 430,
+    "id" : "1EEF8510-B365-4191-9DF1-34BB5E1E89A8",
+    "CourseID" : 3
+  },
+  {
+    "Hole" : 1,
+    "Par" : 4,
+    "Handicap" : 14,
+    "TeeID" : 2,
+    "Yardage" : 365,
+    "id" : "283915D2-EE34-44C5-817F-74F3D7CD543A",
+    "CourseID" : 1
+  },
+  {
+    "Hole" : 1,
+    "Par" : 4,
+    "Handicap" : 13,
+    "TeeID" : 3,
+    "Yardage" : 338,
+    "id" : "4493D0DB-2B6F-43A8-AA65-026DF20E031F",
+    "CourseID" : 2
+  },
+  {
+    "Hole" : 1,
+    "Par" : 4,
+    "Handicap" : 15,
+    "TeeID" : 7,
+    "Yardage" : 318,
+    "id" : "6B2ACC6A-714B-40A0-8BB4-C0324C3D0DD2",
+    "CourseID" : 5
+  },
+  {
+    "Hole" : 1,
+    "Par" : 4,
+    "Handicap" : 14,
+    "TeeID" : 1,
+    "Yardage" : 337,
+    "id" : "774E4EBD-0014-42D1-BC85-19B7A25A486C",
+    "CourseID" : 1
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 9,
+    "Yardage" : 310,
+    "Hole" : 1,
+    "Handicap" : 11,
+    "id" : "88162D87-DF9F-490A-8535-CD1F0758BCE7",
+    "TeeID" : 1
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 274,
+    "Hole" : 1,
+    "Handicap" : 14,
+    "id" : "E3AFA47C-710D-4028-AEF8-14E29BF2DBC7",
+    "TeeID" : 3
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 4,
+    "Yardage" : 423,
+    "Hole" : 1,
+    "TeeID" : 6,
+    "Handicap" : 9,
+    "id" : "E963AAA2-6B55-410B-86A4-ED02483DE637"
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 12,
+    "Yardage" : 297,
+    "Hole" : 1,
+    "TeeID" : 1,
+    "Handicap" : 7,
+    "id" : "EE26FFB3-DD16-47FB-9DD7-73761691CA4F"
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 11,
+    "Yardage" : 440,
+    "Hole" : 1,
+    "TeeID" : 1,
+    "Handicap" : 19,
+    "id" : "EF797CFD-D2AC-4B29-B343-B8C42357EE05"
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 4,
+    "Yardage" : 354,
+    "Hole" : 2,
+    "TeeID" : 6,
+    "Handicap" : 13,
+    "id" : "3CB1DAE1-6457-403D-8A70-25B73A5B1A45"
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 7,
+    "Yardage" : 94,
+    "Hole" : 2,
+    "TeeID" : 1,
+    "Handicap" : 17,
+    "id" : "0208E044-CD80-4FDE-A6BA-6A934DA1AB6C"
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 5,
+    "Yardage" : 305,
+    "Hole" : 2,
+    "TeeID" : 1,
+    "Handicap" : 3,
+    "id" : "046041DA-0FAE-502B-AF0B-81D31061834F"
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 6,
+    "Yardage" : 310,
+    "Hole" : 2,
+    "TeeID" : 8,
+    "Handicap" : 10,
+    "id" : "20D73D88-1F16-4D0F-81F7-86E693E2BEF3"
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 280,
+    "Hole" : 2,
+    "TeeID" : 3,
+    "Handicap" : 10,
+    "id" : "248D43C2-03EE-441D-B51B-B6041E12A2E2"
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 2,
+    "Yardage" : 384,
+    "Hole" : 2,
+    "TeeID" : 3,
+    "Handicap" : 9,
+    "id" : "39EC2929-FE06-41A8-B223-8F09F8C60DA9"
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 10,
+    "Yardage" : 370,
+    "Hole" : 2,
+    "TeeID" : 1,
+    "id" : "6CEA0654-38ED-4DDD-BE84-392CD3B1CEBC",
+    "Handicap" : 3
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 347,
+    "Hole" : 2,
+    "TeeID" : 2,
+    "id" : "7952421E-E465-4F65-8A77-D4ED1F9F62F8",
+    "Handicap" : 10
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 5,
+    "Yardage" : 413,
+    "Hole" : 2,
+    "TeeID" : 7,
+    "id" : "9D2A6D6D-ABEC-4E46-9055-C20A5FE4A530",
+    "Handicap" : 3
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 3,
+    "Yardage" : 478,
+    "Hole" : 2,
+    "TeeID" : 4,
+    "id" : "CCEDD023-7810-4686-98F2-B5F6DBCF821E",
+    "Handicap" : 2
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 325,
+    "Hole" : 2,
+    "TeeID" : 1,
+    "id" : "CED8B532-7B82-4F3E-84B8-D0ED4D450642",
+    "Handicap" : 10
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 11,
+    "Yardage" : 374,
+    "Hole" : 2,
+    "TeeID" : 1,
+    "id" : "B4395CC4-09FE-4E87-9CA8-F7B1693B488E",
+    "Handicap" : 5
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 8,
+    "Yardage" : 166,
+    "Hole" : 2,
+    "TeeID" : 1,
+    "id" : "E4857726-40C0-4152-A79B-2B1BA6106D29",
+    "Handicap" : 11
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 12,
+    "Yardage" : 166,
+    "Hole" : 2,
+    "TeeID" : 1,
+    "id" : "E491F565-F6E5-499F-B4F2-A417B67F9ACC",
+    "Handicap" : 15
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 3,
+    "Yardage" : 440,
+    "Hole" : 2,
+    "TeeID" : 0,
+    "id" : "F85FC35F-E22E-48CC-ACF6-BA2EFDCACFED",
+    "Handicap" : 2
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 9,
+    "Yardage" : 335,
+    "Hole" : 2,
+    "TeeID" : 1,
+    "id" : "FAB07B45-FBFA-4147-8A2A-B81254D38BC8",
+    "Handicap" : 5
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 6,
+    "Yardage" : 147,
+    "Hole" : 3,
+    "TeeID" : 8,
+    "id" : "3BD6A861-1923-4439-B326-A9D1419B21D6",
+    "Handicap" : 12
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 11,
+    "Yardage" : 374,
+    "Hole" : 3,
+    "TeeID" : 1,
+    "id" : "0E385F48-B73C-449E-9C24-08C50B008DFF",
+    "Handicap" : 1
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 3,
+    "Yardage" : 110,
+    "Hole" : 3,
+    "TeeID" : 0,
+    "id" : "7BA8D11C-4B12-4861-A022-BEA551F8C549",
+    "Handicap" : 8
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 5,
+    "Yardage" : 515,
+    "Hole" : 3,
+    "TeeID" : 7,
+    "id" : "400BFF86-029C-4B63-BAC4-B113A3BA169F",
+    "Handicap" : 9
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 12,
+    "Yardage" : 394,
+    "Hole" : 3,
+    "TeeID" : 1,
+    "id" : "90801FD0-880C-47CF-9C2F-44CFE3969307",
+    "Handicap" : 1
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 2,
+    "Yardage" : 124,
+    "Hole" : 3,
+    "TeeID" : 3,
+    "id" : "95881834-0A0A-441C-9C1B-241DA4858807",
+    "Handicap" : 17
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 4,
+    "Yardage" : 361,
+    "Hole" : 3,
+    "TeeID" : 6,
+    "id" : "951B0F0D-EC5F-44EC-8A5D-1AFBC0B02B73",
+    "Handicap" : 1
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 9,
+    "Yardage" : 459,
+    "Hole" : 3,
+    "TeeID" : 1,
+    "id" : "97CB24C5-A3F0-490F-9581-2439E1EB85DB",
+    "Handicap" : 17
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 1,
+    "Yardage" : 130,
+    "Hole" : 3,
+    "TeeID" : 3,
+    "id" : "9B6444FF-597A-4EE9-9ADD-48FF365BC509",
+    "Handicap" : 16
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 10,
+    "Yardage" : 378,
+    "Hole" : 3,
+    "TeeID" : 1,
+    "id" : "A8CDE97E-4BB1-4F96-BD61-3C220DBA84DC",
+    "Handicap" : 1
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 1,
+    "Yardage" : 148,
+    "Hole" : 3,
+    "TeeID" : 1,
+    "id" : "AFAEC04C-F1C3-4E66-A1A7-621B35FD003E",
+    "Handicap" : 16
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 3,
+    "Yardage" : 174,
+    "Hole" : 3,
+    "TeeID" : 4,
+    "id" : "B14FE406-16F4-4B8F-98E5-1E8023CAA570",
+    "Handicap" : 3
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 8,
+    "Yardage" : 364,
+    "Hole" : 3,
+    "TeeID" : 1,
+    "id" : "B1096A57-36D2-4A30-9B2B-1763CA0858E1",
+    "Handicap" : 7
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 1,
+    "Yardage" : 158,
+    "Hole" : 3,
+    "TeeID" : 2,
+    "id" : "C3ACF7CC-B0FC-449B-A862-08CC6D4CCBE6",
+    "Handicap" : 16
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 5,
+    "Yardage" : 417,
+    "Hole" : 3,
+    "TeeID" : 1,
+    "id" : "F5CF2864-F084-7FD6-223C-2EDC8B30F2E0",
+    "Handicap" : 9
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 7,
+    "Yardage" : 462,
+    "Hole" : 3,
+    "TeeID" : 1,
+    "id" : "FAE7F67D-ED3E-4640-A6D5-9766FDC5E5BF",
+    "Handicap" : 9
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 2,
+    "Yardage" : 350,
+    "Hole" : 4,
+    "TeeID" : 3,
+    "id" : "1BA26193-E029-4B0C-9CC2-F978ACA5E383",
+    "Handicap" : 7
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 11,
+    "Yardage" : 160,
+    "Hole" : 4,
+    "TeeID" : 1,
+    "id" : "210AD7A7-4E92-499A-8674-D1A0CBD643A7",
+    "Handicap" : 15
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 6,
+    "Yardage" : 353,
+    "Hole" : 4,
+    "TeeID" : 8,
+    "id" : "225A9B09-E9BC-4742-AE4F-CA01D279A618",
+    "Handicap" : 14
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 7,
+    "Yardage" : 367,
+    "Hole" : 4,
+    "TeeID" : 1,
+    "id" : "39FF581A-BA17-4914-B7C0-0D88275E94C4",
+    "Handicap" : 3
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 5,
+    "Yardage" : 260,
+    "Hole" : 4,
+    "TeeID" : 1,
+    "id" : "51337EB2-A608-CE83-A463-A59DB7601C5F",
+    "Handicap" : 17
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 4,
+    "Yardage" : 119,
+    "Hole" : 4,
+    "TeeID" : 6,
+    "id" : "6CA6EE9E-93D5-44DE-A8B5-776BA4E54E4B",
+    "Handicap" : 17
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 330,
+    "Hole" : 4,
+    "TeeID" : 3,
+    "id" : "70D375E0-C455-41CF-9001-4E4EF948F9A0",
+    "Handicap" : 6
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 375,
+    "Hole" : 4,
+    "TeeID" : 2,
+    "id" : "8BD9E703-9307-4ADC-8B2B-33BAFD2EBA56",
+    "Handicap" : 6
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 5,
+    "Yardage" : 260,
+    "Hole" : 4,
+    "TeeID" : 7,
+    "id" : "95C6DDA2-B89F-4039-B91A-C8E2681213EA",
+    "Handicap" : 17
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 3,
+    "Yardage" : 320,
+    "Hole" : 4,
+    "TeeID" : 0,
+    "id" : "CD0D4C43-F25C-41CF-8936-CDD2F9A29272",
+    "Handicap" : 4
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 10,
+    "Yardage" : 465,
+    "Hole" : 4,
+    "TeeID" : 1,
+    "id" : "A93EF4F5-5D34-460F-92F5-CC51E290A6D8",
+    "Handicap" : 2
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 3,
+    "Yardage" : 360,
+    "Hole" : 4,
+    "TeeID" : 4,
+    "id" : "AD56127E-2360-4C37-AE88-8B7242228D9F",
+    "Handicap" : 4
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 12,
+    "Yardage" : 320,
+    "Hole" : 4,
+    "TeeID" : 1,
+    "id" : "B9DB46F1-A875-4645-8CB4-CE00E8299B5E",
+    "Handicap" : 11
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 375,
+    "Hole" : 4,
+    "TeeID" : 1,
+    "id" : "D8274034-A642-4D9D-89FD-6DE26778C8F1",
+    "Handicap" : 6
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 9,
+    "Yardage" : 307,
+    "Hole" : 4,
+    "TeeID" : 1,
+    "id" : "EC9B9E8C-F8EF-42AE-8ACD-994865CAF2BA",
+    "Handicap" : 13
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 8,
+    "Yardage" : 482,
+    "Hole" : 4,
+    "TeeID" : 1,
+    "id" : "F3D6AD06-5701-4C97-998C-960C7219AE12",
+    "Handicap" : 5
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 10,
+    "Yardage" : 145,
+    "Hole" : 5,
+    "TeeID" : 1,
+    "id" : "02B2153C-B3FA-4597-A8A5-886696E7BBD4",
+    "Handicap" : 8
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 6,
+    "Yardage" : 344,
+    "Hole" : 5,
+    "TeeID" : 8,
+    "id" : "057B4A16-CBEE-4FD3-8D1A-B2DA1EA1EB4F",
+    "Handicap" : 6
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 5,
+    "Yardage" : 144,
+    "Hole" : 5,
+    "TeeID" : 1,
+    "id" : "28E84C2D-72EA-A868-3C4F-3EAC79228747",
+    "Handicap" : 13
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 12,
+    "Yardage" : 158,
+    "Hole" : 5,
+    "TeeID" : 1,
+    "id" : "7F8FF64B-8FBC-4767-8E53-ADF3C90A9B4A",
+    "Handicap" : 13
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 403,
+    "Hole" : 5,
+    "TeeID" : 2,
+    "id" : "5D826D44-4664-4D2C-A95F-A50725922250",
+    "Handicap" : 2
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 7,
+    "Yardage" : 128,
+    "Hole" : 5,
+    "TeeID" : 1,
+    "id" : "87CA2DC1-B73A-47AF-A6BE-AB21CAD68004",
+    "Handicap" : 15
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 312,
+    "Hole" : 5,
+    "TeeID" : 3,
+    "id" : "96B2F1DF-23F8-4937-83BA-22E8C596B6A8",
+    "Handicap" : 2
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 5,
+    "Yardage" : 144,
+    "Hole" : 5,
+    "TeeID" : 7,
+    "id" : "9C6797B3-AC65-410B-BECE-11EE8D741D3F",
+    "Handicap" : 13
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 366,
+    "Hole" : 5,
+    "TeeID" : 1,
+    "id" : "9E74FD2D-3854-4128-9A43-C17957A046F3",
+    "Handicap" : 2
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 9,
+    "Yardage" : 161,
+    "Hole" : 5,
+    "TeeID" : 1,
+    "id" : "A878C64C-F2E1-4900-A071-A93524447D5A",
+    "Handicap" : 7
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 4,
+    "Yardage" : 473,
+    "Hole" : 5,
+    "TeeID" : 6,
+    "id" : "A88ED64B-0A37-476B-999E-9BC4F038D631",
+    "Handicap" : 5
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 3,
+    "Yardage" : 136,
+    "Hole" : 5,
+    "TeeID" : 4,
+    "id" : "AC868D1D-5C61-40A8-9302-D556C20C2A37",
+    "Handicap" : 5
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 2,
+    "Yardage" : 547,
+    "Hole" : 5,
+    "TeeID" : 3,
+    "id" : "B183B1CB-04E9-40D7-878B-1E966CFB299C",
+    "Handicap" : 3
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 3,
+    "Yardage" : 125,
+    "Hole" : 5,
+    "TeeID" : 0,
+    "id" : "C170447B-C10F-44C2-B5D5-84560A476C9C",
+    "Handicap" : 18
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 8,
+    "Yardage" : 137,
+    "Hole" : 5,
+    "TeeID" : 1,
+    "id" : "D46F3487-3DD6-4639-87DC-9638C587E8EE",
+    "Handicap" : 17
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 11,
+    "Yardage" : 301,
+    "Hole" : 5,
+    "TeeID" : 1,
+    "id" : "FC743399-6D86-4264-A876-36A5A63D57D8",
+    "Handicap" : 17
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 11,
+    "Yardage" : 466,
+    "Hole" : 6,
+    "TeeID" : 1,
+    "id" : "0030CD63-4292-4F37-8ACA-C8194855B6D8",
+    "Handicap" : 3
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 5,
+    "Yardage" : 453,
+    "Hole" : 6,
+    "TeeID" : 1,
+    "id" : "09409CA8-5B37-672B-752B-87EAA02C1F11",
+    "Handicap" : 7
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 7,
+    "Yardage" : 484,
+    "Hole" : 6,
+    "TeeID" : 1,
+    "id" : "0FF8AAF1-296A-47D2-A8C6-4F7B7B0A2A81",
+    "Handicap" : 5
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 3,
+    "Yardage" : 260,
+    "Hole" : 6,
+    "TeeID" : 0,
+    "id" : "29F92C2B-AE6C-4747-88CC-6963862D798C",
+    "Handicap" : 10
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 3,
+    "Yardage" : 332,
+    "Hole" : 6,
+    "TeeID" : 4,
+    "id" : "7AF037E6-FBD9-41F2-A321-C460CD2E7D4B",
+    "Handicap" : 6
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 302,
+    "Hole" : 6,
+    "TeeID" : 1,
+    "id" : "7C042544-A0E4-439E-AF35-4CAC8791F315",
+    "Handicap" : 12
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 9,
+    "Yardage" : 421,
+    "Hole" : 6,
+    "TeeID" : 1,
+    "id" : "7D49A336-A88D-4EA5-84FF-1475D2A14FB6",
+    "Handicap" : 1
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 326,
+    "Hole" : 6,
+    "TeeID" : 2,
+    "id" : "4DF9911E-BB72-4D24-999D-57EBACEA1721",
+    "Handicap" : 12
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 4,
+    "Yardage" : 295,
+    "Hole" : 6,
+    "TeeID" : 6,
+    "id" : "6970C20D-2A74-4E72-AFEF-ADC615BD47F4",
+    "Handicap" : 15
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 5,
+    "Yardage" : 537,
+    "Hole" : 6,
+    "TeeID" : 7,
+    "id" : "9496F987-AA72-4E9F-A87E-096AA6159BD6",
+    "Handicap" : 7
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 270,
+    "Hole" : 6,
+    "TeeID" : 3,
+    "id" : "95DBB334-4439-4D1A-9D93-E65615EA2594",
+    "Handicap" : 12
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 2,
+    "Yardage" : 433,
+    "Hole" : 6,
+    "TeeID" : 3,
+    "id" : "CADCC35B-37BE-48A3-AC9C-AB750FAC9BDC",
+    "Handicap" : 1
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 6,
+    "Yardage" : 291,
+    "Hole" : 6,
+    "TeeID" : 8,
+    "id" : "A751F5C1-1827-46D4-BFA4-446D37A893C1",
+    "Handicap" : 16
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 10,
+    "Yardage" : 285,
+    "Hole" : 6,
+    "TeeID" : 1,
+    "id" : "D5A31BEF-1528-487D-B449-2F4BEC40446E",
+    "Handicap" : 9
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 12,
+    "Yardage" : 473,
+    "Hole" : 6,
+    "TeeID" : 1,
+    "id" : "DF6ADCF0-D2C3-4939-95F3-B33728C06712",
+    "Handicap" : 3
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 8,
+    "Yardage" : 373,
+    "Hole" : 6,
+    "TeeID" : 1,
+    "id" : "EB4311C7-C4D7-465B-A935-BD3EAF1E8C99",
+    "Handicap" : 3
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 5,
+    "Yardage" : 142,
+    "Hole" : 7,
+    "TeeID" : 1,
+    "id" : "3C68D018-639F-DCBA-ACEB-CE453F61E691",
+    "Handicap" : 11
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 8,
+    "Yardage" : 511,
+    "Hole" : 7,
+    "TeeID" : 1,
+    "id" : "027A767C-853B-4CE7-BF20-1CA159CBC4D2",
+    "Handicap" : 1
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 5,
+    "Yardage" : 142,
+    "Hole" : 7,
+    "TeeID" : 7,
+    "id" : "09F6BF82-5134-4E79-A37E-B660F99C1644",
+    "Handicap" : 11
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 3,
+    "Yardage" : 260,
+    "Hole" : 7,
+    "TeeID" : 0,
+    "id" : "0D16AF60-52AE-4F2C-922F-87510CA6FD63",
+    "Handicap" : 18
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 12,
+    "Yardage" : 127,
+    "Hole" : 7,
+    "TeeID" : 1,
+    "id" : "0E0BDF51-1076-4063-84B1-36044D355FA7",
+    "Handicap" : 17
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 6,
+    "Yardage" : 454,
+    "Hole" : 7,
+    "TeeID" : 8,
+    "id" : "386839F4-3711-4E25-AB01-838BCE7F7922",
+    "Handicap" : 2
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 9,
+    "Yardage" : 463,
+    "Hole" : 7,
+    "TeeID" : 1,
+    "id" : "4161ED9E-5D3A-43E3-B05C-4DA785376004",
+    "Handicap" : 15
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 7,
+    "Yardage" : 144,
+    "Hole" : 7,
+    "TeeID" : 1,
+    "id" : "5D15888F-6FE6-4F6D-863E-B4D95C453C3B",
+    "Handicap" : 13
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 1,
+    "Yardage" : 152,
+    "Hole" : 7,
+    "TeeID" : 1,
+    "id" : "6E27BE9E-E52A-49B1-9C72-E2FA8B004758",
+    "Handicap" : 18
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 5,
+    "Yardage" : 142,
+    "Hole" : 7,
+    "TeeID" : -1,
+    "id" : "6FAF3164-8DA1-EDFB-1808-9CF1DA409D76",
+    "Handicap" : 11
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 3,
+    "Yardage" : 281,
+    "Hole" : 7,
+    "TeeID" : 4,
+    "id" : "775BF169-2AD1-4D19-A117-5ADE89BF2079",
+    "Handicap" : 7
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 4,
+    "Yardage" : 165,
+    "Hole" : 7,
+    "TeeID" : 6,
+    "id" : "CD87CA4F-768C-418C-A683-236B1BD6578F",
+    "Handicap" : 11
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 10,
+    "Yardage" : 248,
+    "Hole" : 7,
+    "TeeID" : 1,
+    "id" : "C26DB178-4448-42FC-B661-DB845C2B27A9",
+    "Handicap" : 6
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 1,
+    "Yardage" : 142,
+    "Hole" : 7,
+    "TeeID" : 3,
+    "id" : "ECAA3641-50D6-4AAD-B5B9-FE7E5593913B",
+    "Handicap" : 18
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 1,
+    "Yardage" : 174,
+    "Hole" : 7,
+    "TeeID" : 2,
+    "id" : "F40B37CA-31F0-4BE6-B03B-605C80E87597",
+    "Handicap" : 18
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 2,
+    "Yardage" : 460,
+    "Hole" : 7,
+    "TeeID" : 3,
+    "id" : "F6C633D4-064A-49A4-899C-DA55DA5AA0BE",
+    "Handicap" : 5
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 11,
+    "Yardage" : 338,
+    "Hole" : 7,
+    "TeeID" : 1,
+    "id" : "FEA84766-2389-4633-8128-C56203DFC559",
+    "Handicap" : 7
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 3,
+    "Yardage" : 134,
+    "Hole" : 8,
+    "TeeID" : 4,
+    "id" : "3AC050FC-E132-441B-8D03-E5D3E9509F26",
+    "Handicap" : 8
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 379,
+    "Hole" : 8,
+    "TeeID" : 1,
+    "id" : "0B527F54-61A4-437F-AFAB-A4957717632B",
+    "Handicap" : 4
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 10,
+    "Yardage" : 320,
+    "Hole" : 8,
+    "TeeID" : 1,
+    "id" : "18271A81-32F0-4F57-9438-A687E13C0391",
+    "Handicap" : 5
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 5,
+    "Yardage" : 314,
+    "Hole" : 8,
+    "TeeID" : 7,
+    "id" : "1FE121F1-C56E-482C-8B6D-0F4D285F0D62",
+    "Handicap" : 5
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 4,
+    "Yardage" : 369,
+    "Hole" : 8,
+    "TeeID" : 6,
+    "id" : "3141644B-7EFD-491A-9011-5CE45B9B6332",
+    "Handicap" : 7
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 6,
+    "Yardage" : 144,
+    "Hole" : 8,
+    "TeeID" : 8,
+    "id" : "7EE27F47-FD93-4D2A-ACCA-7CDF41FFD799",
+    "Handicap" : 18
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 3,
+    "Yardage" : 110,
+    "Hole" : 8,
+    "TeeID" : 0,
+    "id" : "4349B53E-47DB-4A6D-A7D5-9E5B30FA7DCB",
+    "Handicap" : 15
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 379,
+    "Hole" : 8,
+    "TeeID" : 2,
+    "id" : "46C3F74C-0D93-4E1A-9738-4F96C335D639",
+    "Handicap" : 4
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 12,
+    "Yardage" : 350,
+    "Hole" : 8,
+    "TeeID" : 1,
+    "id" : "5813C8C0-0643-48C8-A023-EC2F9B09E1DF",
+    "Handicap" : 5
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 325,
+    "Hole" : 8,
+    "TeeID" : 3,
+    "id" : "6D3F0AFD-F0BC-456D-AF48-382AAB3F5BA3",
+    "Handicap" : 4
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 11,
+    "Yardage" : 136,
+    "Hole" : 8,
+    "TeeID" : 1,
+    "id" : "6F85ECA3-309F-4E47-899B-C875A098203F",
+    "Handicap" : 13
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 7,
+    "Yardage" : 409,
+    "Hole" : 8,
+    "TeeID" : 1,
+    "id" : "8A14EAD7-FB6A-4217-8082-DA18B1835AC0",
+    "Handicap" : 1
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 8,
+    "Yardage" : 288,
+    "Hole" : 8,
+    "TeeID" : 1,
+    "id" : "999CD992-83F6-4641-A2DF-9DB20538AAC1",
+    "Handicap" : 15
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 2,
+    "Yardage" : 315,
+    "Hole" : 8,
+    "TeeID" : 3,
+    "id" : "99B3AEAC-D19C-45EB-9AAA-61177C95EAC7",
+    "Handicap" : 15
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 9,
+    "Yardage" : 151,
+    "Hole" : 8,
+    "TeeID" : 1,
+    "id" : "9AEB9372-E23D-4280-9BAB-B3289F385209",
+    "Handicap" : 9
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 5,
+    "Yardage" : 314,
+    "Hole" : 8,
+    "TeeID" : 1,
+    "id" : "E96BCCF7-CAA6-6AFB-4E5F-45BF59CBC5F9",
+    "Handicap" : 5
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 1,
+    "Yardage" : 501,
+    "Hole" : 9,
+    "TeeID" : 1,
+    "id" : "289F6AAB-54BA-4CEE-881F-8C0D1AAA7DB9",
+    "Handicap" : 8
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 3,
+    "Yardage" : 340,
+    "Hole" : 9,
+    "TeeID" : 4,
+    "id" : "2B3647E7-CE4B-4028-8CAC-5208D05F7A00",
+    "Handicap" : 9
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 6,
+    "Yardage" : 337,
+    "Hole" : 9,
+    "TeeID" : 8,
+    "id" : "586BCFDD-8A7E-49D0-8FD8-BD0990DFF88E",
+    "Handicap" : 8
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 3,
+    "Yardage" : 295,
+    "Hole" : 9,
+    "TeeID" : 0,
+    "id" : "66A6567B-911B-41FE-A311-F18DF570B65B",
+    "Handicap" : 12
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 4,
+    "Yardage" : 386,
+    "Hole" : 9,
+    "TeeID" : 6,
+    "id" : "6D577E45-C19C-441B-80F5-B5F21E934365",
+    "Handicap" : 3
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 5,
+    "Yardage" : 350,
+    "Hole" : 9,
+    "TeeID" : 7,
+    "id" : "8993F3E9-A907-41B7-B206-4E48156EF0BF",
+    "Handicap" : 1
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 8,
+    "Yardage" : 314,
+    "Hole" : 9,
+    "TeeID" : 1,
+    "id" : "8EEF3C06-31DF-4588-83E1-D2A1598A038A",
+    "Handicap" : 3
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 12,
+    "Yardage" : 260,
+    "Hole" : 9,
+    "TeeID" : 1,
+    "id" : "91FE977D-5362-4D30-9F80-1FF136EF6C42",
+    "Handicap" : 9
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 9,
+    "Yardage" : 407,
+    "Hole" : 9,
+    "TeeID" : 1,
+    "id" : "9F8FB1AE-C5C3-4115-BBAA-46D3454759FC",
+    "Handicap" : 3
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 2,
+    "Yardage" : 199,
+    "Hole" : 9,
+    "TeeID" : 3,
+    "id" : "A55FE227-05CF-4CCE-95AD-A3EF1D3F7EDB",
+    "Handicap" : 11
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 5,
+    "Yardage" : 350,
+    "Hole" : 9,
+    "TeeID" : 1,
+    "id" : "A886761B-DC71-3714-3936-2EC7F7BC1498",
+    "Handicap" : 1
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 1,
+    "Yardage" : 434,
+    "Hole" : 9,
+    "TeeID" : 3,
+    "id" : "AF150D42-3715-4D22-B59D-E5629BB23AED",
+    "Handicap" : 8
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 1,
+    "Yardage" : 501,
+    "Hole" : 9,
+    "TeeID" : 2,
+    "id" : "BA67E877-8E75-45CD-91AD-2F7294FF3188",
+    "Handicap" : 8
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 10,
+    "Yardage" : 139,
+    "Hole" : 9,
+    "TeeID" : 1,
+    "id" : "C24E0720-0B83-42B0-B9C5-E4A9F27184B0",
+    "Handicap" : 7
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 7,
+    "Yardage" : 481,
+    "Hole" : 9,
+    "TeeID" : 1,
+    "id" : "D12C39DE-45A8-40C2-88F9-E734B1DBF032",
+    "Handicap" : 7
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 11,
+    "Yardage" : 473,
+    "Hole" : 9,
+    "TeeID" : 1,
+    "id" : "D980B031-D891-4FEB-B3CE-522F676252AB",
+    "Handicap" : 13
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 8,
+    "Yardage" : 303,
+    "Hole" : 10,
+    "TeeID" : 1,
+    "id" : "15354C15-50E2-4564-9869-CFEA3DBC1A62",
+    "Handicap" : 18
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 2,
+    "Yardage" : 134,
+    "Hole" : 10,
+    "TeeID" : 3,
+    "id" : "1651BCAE-8436-4B3A-8095-E9319D60695A",
+    "Handicap" : 16
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 3,
+    "Yardage" : 320,
+    "Hole" : 10,
+    "TeeID" : 4,
+    "id" : "1868C785-7ABB-440B-B211-D289283BFDDE",
+    "Handicap" : 10
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 12,
+    "Yardage" : 277,
+    "Hole" : 10,
+    "TeeID" : 1,
+    "id" : "377A6482-5C24-4688-9D1D-BE659BCB5FF8",
+    "Handicap" : 12
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 10,
+    "Yardage" : 485,
+    "Hole" : 10,
+    "TeeID" : 1,
+    "id" : "370E38AA-3610-4259-924A-EA711CD7554A",
+    "Handicap" : 6
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 352,
+    "Hole" : 10,
+    "TeeID" : 1,
+    "id" : "41C9927C-E3FB-4211-92E3-BAF25E48F839",
+    "Handicap" : 11
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 4,
+    "Yardage" : 470,
+    "Hole" : 10,
+    "TeeID" : 6,
+    "id" : "47FB6F9C-158B-4E06-BB9B-124DEF946E38",
+    "Handicap" : 2
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 3,
+    "Yardage" : 305,
+    "Hole" : 10,
+    "TeeID" : 0,
+    "id" : "8E169179-A169-4C50-8C91-D96D6ADF7233",
+    "Handicap" : 9
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 6,
+    "Yardage" : 374,
+    "Hole" : 10,
+    "TeeID" : 8,
+    "id" : "9196F6DE-1F92-411E-A003-41488B61B7C9",
+    "Handicap" : 9
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 9,
+    "Yardage" : 383,
+    "Hole" : 10,
+    "TeeID" : 1,
+    "id" : "93DDA81A-53BD-4059-B052-8D4A794C6F90",
+    "Handicap" : 8
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 352,
+    "Hole" : 10,
+    "TeeID" : 2,
+    "id" : "99E635B8-2852-47CB-8968-834D4347A5F7",
+    "Handicap" : 11
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 5,
+    "Yardage" : 283,
+    "Hole" : 10,
+    "TeeID" : 1,
+    "id" : "A148653A-0525-DE70-71B4-33A3F011CF91",
+    "Handicap" : 6
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 11,
+    "Yardage" : 287,
+    "Hole" : 10,
+    "TeeID" : 1,
+    "id" : "AB4E31CD-326F-4FB6-B4A2-E79C194AF6BA",
+    "Handicap" : 18
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 319,
+    "Hole" : 10,
+    "TeeID" : 3,
+    "id" : "B25B3F01-BF79-4768-B27A-C06F3CDA9F16",
+    "Handicap" : 11
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 7,
+    "Yardage" : 111,
+    "Hole" : 10,
+    "TeeID" : 1,
+    "id" : "F3B1CDB0-F8EA-425D-828E-F782F76C8CF2",
+    "Handicap" : 18
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 5,
+    "Yardage" : 358,
+    "Hole" : 10,
+    "TeeID" : 7,
+    "id" : "FC644AFC-AF51-4932-B561-6099D5DEE5B8",
+    "Handicap" : 6
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 11,
+    "Yardage" : 310,
+    "Hole" : 11,
+    "TeeID" : 1,
+    "id" : "3A683FD7-48F9-4062-86E1-A29DE10D0A43",
+    "Handicap" : 12
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 5,
+    "Yardage" : 508,
+    "Hole" : 11,
+    "TeeID" : 7,
+    "id" : "08B748DD-C5F1-43F6-B564-1F90338DA62F",
+    "Handicap" : 10
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 9,
+    "Yardage" : 381,
+    "Hole" : 11,
+    "TeeID" : 1,
+    "id" : "16DAE28A-E1AC-4DAA-9CC8-E9A2DC904906",
+    "Handicap" : 10
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 6,
+    "Yardage" : 130,
+    "Hole" : 11,
+    "TeeID" : 8,
+    "id" : "1837F6D8-1082-4C4B-ABF2-7BE7B2044691",
+    "Handicap" : 17
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 384,
+    "Hole" : 11,
+    "TeeID" : 1,
+    "id" : "7D028F7B-B878-403F-A86D-C26A54D6FEA6",
+    "Handicap" : 1
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 5,
+    "Yardage" : 466,
+    "Hole" : 11,
+    "TeeID" : 1,
+    "id" : "4B1BD84C-7A81-18D8-0493-E45C054A82A1",
+    "Handicap" : 10
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 2,
+    "Yardage" : 371,
+    "Hole" : 11,
+    "TeeID" : 3,
+    "id" : "6F66F17E-2278-4960-A4C4-1B3259447C16",
+    "Handicap" : 6
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 434,
+    "Hole" : 11,
+    "TeeID" : 2,
+    "id" : "7043B323-EDA3-4A30-A774-DC95ABA422EC",
+    "Handicap" : 1
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 4,
+    "Yardage" : 241,
+    "Hole" : 11,
+    "TeeID" : 6,
+    "id" : "94D90221-FC18-40C8-B699-45E78998EDF3",
+    "Handicap" : 18
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 7,
+    "Yardage" : 430,
+    "Hole" : 11,
+    "TeeID" : 1,
+    "id" : "A8A15D12-8781-40F6-AE35-6A96E64204DF",
+    "Handicap" : 8
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 8,
+    "Yardage" : 154,
+    "Hole" : 11,
+    "TeeID" : 1,
+    "id" : "AC6358BF-8D1E-4B20-BBC6-7195A4D8D3CE",
+    "Handicap" : 8
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 12,
+    "Yardage" : 466,
+    "Hole" : 11,
+    "TeeID" : 1,
+    "id" : "BA810966-7588-48FC-968B-0446DB9B7521",
+    "Handicap" : 4
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 3,
+    "Yardage" : 135,
+    "Hole" : 11,
+    "TeeID" : 4,
+    "id" : "BF9FFAB3-CA62-4F59-9C54-49C128587958",
+    "Handicap" : 11
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 384,
+    "Hole" : 11,
+    "TeeID" : 3,
+    "id" : "F05D0596-A495-4564-84CE-701478831F76",
+    "Handicap" : 1
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 3,
+    "Yardage" : 125,
+    "Hole" : 11,
+    "TeeID" : 0,
+    "id" : "F459104B-B123-4087-BA71-01761A648488",
+    "Handicap" : 17
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 10,
+    "Yardage" : 174,
+    "Hole" : 11,
+    "TeeID" : 1,
+    "id" : "FBC0EA07-5A7A-446B-9FCA-40EF03CD6D42",
+    "Handicap" : 2
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 9,
+    "Yardage" : 408,
+    "Hole" : 12,
+    "TeeID" : 1,
+    "id" : "3ECB505A-B671-43CB-87B4-A72F47A93CF9",
+    "Handicap" : 2
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 6,
+    "Yardage" : 396,
+    "Hole" : 12,
+    "TeeID" : 8,
+    "id" : "01402122-E78E-4780-A985-3F5CBBF5F614",
+    "Handicap" : 13
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 8,
+    "Yardage" : 351,
+    "Hole" : 12,
+    "TeeID" : 1,
+    "id" : "15358C23-FAB7-4D73-B8A8-5A137ABF8808",
+    "Handicap" : 10
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 10,
+    "Yardage" : 464,
+    "Hole" : 12,
+    "TeeID" : 1,
+    "id" : "230D8B82-3191-4D59-9CF7-E34738D04682",
+    "Handicap" : 5
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 7,
+    "Yardage" : 118,
+    "Hole" : 12,
+    "TeeID" : 1,
+    "id" : "33DC9BB0-57F6-4DAD-952D-46CD12B58832",
+    "Handicap" : 16
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 1,
+    "Yardage" : 140,
+    "Hole" : 12,
+    "TeeID" : 1,
+    "id" : "39FBDB44-9662-47D0-9FA8-C5FF9E2CAA8A",
+    "Handicap" : 15
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 5,
+    "Yardage" : 116,
+    "Hole" : 12,
+    "TeeID" : 1,
+    "id" : "7D453DCA-8DA9-182D-48AB-8E562DCF8954",
+    "Handicap" : 2
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 2,
+    "Yardage" : 294,
+    "Hole" : 12,
+    "TeeID" : 3,
+    "id" : "4018EEF5-7701-46C1-B49D-B552901E6BFF",
+    "Handicap" : 10
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 4,
+    "Yardage" : 154,
+    "Hole" : 12,
+    "TeeID" : 6,
+    "id" : "49A64168-AD29-4E38-9CD3-F4DED50EB02D",
+    "Handicap" : 16
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 5,
+    "Yardage" : 169,
+    "Hole" : 12,
+    "TeeID" : 7,
+    "id" : "6542B6D3-25AB-4D92-AA16-A318EAC100CD",
+    "Handicap" : 2
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 3,
+    "Yardage" : 305,
+    "Hole" : 12,
+    "TeeID" : 0,
+    "id" : "663F0194-6961-4DB2-A589-D0FB0A8A816A",
+    "Handicap" : 5
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 3,
+    "Yardage" : 352,
+    "Hole" : 12,
+    "TeeID" : 4,
+    "id" : "69291DE3-FD3D-493F-A37F-346B6031DA23",
+    "Handicap" : 12
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 1,
+    "Yardage" : 159,
+    "Hole" : 12,
+    "TeeID" : 2,
+    "id" : "824E6156-FAFF-43E0-B702-35DCEB435069",
+    "Handicap" : 15
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 11,
+    "Yardage" : 490,
+    "Hole" : 12,
+    "TeeID" : 1,
+    "id" : "CD69171E-0584-4FBB-AA6F-CD43839325DE",
+    "Handicap" : 4
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 12,
+    "Yardage" : 366,
+    "Hole" : 12,
+    "TeeID" : 1,
+    "id" : "BE2CA8A6-5160-4387-9795-83247498C7E8",
+    "Handicap" : 2
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 1,
+    "Yardage" : 112,
+    "Hole" : 12,
+    "TeeID" : 3,
+    "id" : "ED13AC5E-C759-4ABD-9571-BF613F266C07",
+    "Handicap" : 15
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 2,
+    "Yardage" : 387,
+    "Hole" : 13,
+    "TeeID" : 3,
+    "id" : "182192C4-EBF4-40BA-B2A0-3989FC5433D8",
+    "Handicap" : 2
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 296,
+    "Hole" : 13,
+    "TeeID" : 3,
+    "id" : "28874076-BBFD-437D-89B4-DDFE5EAF5642",
+    "Handicap" : 13
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 3,
+    "Yardage" : 304,
+    "Hole" : 13,
+    "TeeID" : 4,
+    "id" : "43D22077-0048-4C68-B5DB-C2977FEA6B8B",
+    "Handicap" : 13
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 317,
+    "Hole" : 13,
+    "TeeID" : 1,
+    "id" : "53C504B4-E452-443C-9D5F-6873B6EEA33B",
+    "Handicap" : 13
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 8,
+    "Yardage" : 471,
+    "Hole" : 13,
+    "TeeID" : 1,
+    "id" : "74869E9F-FA0F-4BFE-AA37-ABEA9D82AECB",
+    "Handicap" : 4
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 11,
+    "Yardage" : 177,
+    "Hole" : 13,
+    "TeeID" : 1,
+    "id" : "89D23293-9EBD-4D6B-960F-8D32ECF6FA9E",
+    "Handicap" : 10
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 3,
+    "Yardage" : 260,
+    "Hole" : 13,
+    "TeeID" : 0,
+    "id" : "9C22B832-AC40-4115-AAEF-93BF1DDC29E4",
+    "Handicap" : 13
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 317,
+    "Hole" : 13,
+    "TeeID" : 2,
+    "id" : "B0A31D99-C9BD-4E14-BF1D-7061C4C12124",
+    "Handicap" : 13
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 4,
+    "Yardage" : 272,
+    "Hole" : 13,
+    "TeeID" : 6,
+    "id" : "B36AA0F0-C41E-4BA3-B297-A41CBC104BCB",
+    "Handicap" : 12
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 9,
+    "Yardage" : 516,
+    "Hole" : 13,
+    "TeeID" : 1,
+    "id" : "BAFEC05B-7318-4B63-9902-32C7517611D3",
+    "Handicap" : 16
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 12,
+    "Yardage" : 300,
+    "Hole" : 13,
+    "TeeID" : 1,
+    "id" : "BE8A0E41-66AA-4198-8741-477F303CD591",
+    "Handicap" : 10
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 5,
+    "Yardage" : 322,
+    "Hole" : 13,
+    "TeeID" : 1,
+    "id" : "C34F9970-7C1D-2977-AC5B-6DCE7818DAD5",
+    "Handicap" : 8
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 6,
+    "Yardage" : 325,
+    "Hole" : 13,
+    "TeeID" : 8,
+    "id" : "E7F0F3CA-92DC-4FF9-80E3-806B5663A22E",
+    "Handicap" : 7
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 10,
+    "Yardage" : 150,
+    "Hole" : 13,
+    "TeeID" : 1,
+    "id" : "EA8EB9C3-1216-4512-8476-2E93CF1FC1FA",
+    "Handicap" : 9
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 7,
+    "Yardage" : 256,
+    "Hole" : 13,
+    "TeeID" : 1,
+    "id" : "EDE1BF6E-7E3E-4302-926C-423A09255E0D",
+    "Handicap" : 12
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 5,
+    "Yardage" : 322,
+    "Hole" : 13,
+    "TeeID" : 7,
+    "id" : "F9E663E0-4147-4584-9039-34BC3E845072",
+    "Handicap" : 8
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 4,
+    "Yardage" : 160,
+    "Hole" : 14,
+    "TeeID" : 6,
+    "id" : "3F955DAF-9E5E-4564-8A3A-0BBD29A8A179",
+    "Handicap" : 10
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 1,
+    "Yardage" : 519,
+    "Hole" : 14,
+    "TeeID" : 2,
+    "id" : "05E0A687-1788-40D6-B06B-E4DBA08D7C9C",
+    "Handicap" : 5
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 3,
+    "Yardage" : 390,
+    "Hole" : 14,
+    "TeeID" : 0,
+    "id" : "0EF3CE30-C3CF-4008-A851-7A3F54159DB8",
+    "Handicap" : 7
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 10,
+    "Yardage" : 335,
+    "Hole" : 14,
+    "TeeID" : 1,
+    "id" : "7ADEFA41-642D-4B54-97B9-096FCCEBB3CF",
+    "Handicap" : 7
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 5,
+    "Yardage" : 368,
+    "Hole" : 14,
+    "TeeID" : 7,
+    "id" : "7EFC3329-FBB8-4B02-80A1-AAD5577196DF",
+    "Handicap" : 14
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 1,
+    "Yardage" : 431,
+    "Hole" : 14,
+    "TeeID" : 3,
+    "id" : "471FDA9D-B58E-4728-9F7C-18352921EACC",
+    "Handicap" : 5
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 8,
+    "Yardage" : 468,
+    "Hole" : 14,
+    "TeeID" : 1,
+    "id" : "5F2ECA19-B47F-4B95-9272-2416744028F4",
+    "Handicap" : 2
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 3,
+    "Yardage" : 451,
+    "Hole" : 14,
+    "TeeID" : 4,
+    "id" : "768043EA-7059-4E20-B1C5-3A1E25BDB65D",
+    "Handicap" : 14
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 2,
+    "Yardage" : 334,
+    "Hole" : 14,
+    "TeeID" : 3,
+    "id" : "CB340F2D-DFCD-43D2-97BF-AD90774098C9",
+    "Handicap" : 12
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 7,
+    "Yardage" : 286,
+    "Hole" : 14,
+    "TeeID" : 1,
+    "id" : "A7FBEC9B-B057-4012-A2AD-EB81FE34FAC1",
+    "Handicap" : 4
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 12,
+    "Yardage" : 317,
+    "Hole" : 14,
+    "TeeID" : 1,
+    "id" : "B0CA752F-78CC-4997-ABDD-0A326567F3EB",
+    "Handicap" : 14
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 11,
+    "Yardage" : 291,
+    "Hole" : 14,
+    "TeeID" : 1,
+    "id" : "D1AF2C5D-38DE-45BD-A576-56B94F9D1E47",
+    "Handicap" : 6
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 6,
+    "Yardage" : 302,
+    "Hole" : 14,
+    "TeeID" : 8,
+    "id" : "DEDFD73E-1E49-4327-BFAB-89C165BE4952",
+    "Handicap" : 11
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 1,
+    "Yardage" : 478,
+    "Hole" : 14,
+    "TeeID" : 1,
+    "id" : "DF3514F1-046A-4742-AE42-EC7FB62A42BB",
+    "Handicap" : 5
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 9,
+    "Yardage" : 190,
+    "Hole" : 14,
+    "TeeID" : 1,
+    "id" : "FCBF4D95-F25C-4A7C-A847-B20E1529F918",
+    "Handicap" : 4
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 5,
+    "Yardage" : 368,
+    "Hole" : 14,
+    "TeeID" : 1,
+    "id" : "FE478178-166C-676D-C103-10DC94D9AC87",
+    "Handicap" : 14
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 10,
+    "Yardage" : 179,
+    "Hole" : 15,
+    "TeeID" : 1,
+    "id" : "35ADBD01-36AF-4368-98FB-9924E108CA5B",
+    "Handicap" : 4
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 4,
+    "Yardage" : 264,
+    "Hole" : 15,
+    "TeeID" : 6,
+    "id" : "46DE1497-21E1-4E10-8917-8C409FED670D",
+    "Handicap" : 8
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 11,
+    "Yardage" : 148,
+    "Hole" : 15,
+    "TeeID" : 1,
+    "id" : "61F6305E-E475-4462-8E3E-885E595BD432",
+    "Handicap" : 14
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 1,
+    "Yardage" : 128,
+    "Hole" : 15,
+    "TeeID" : 3,
+    "id" : "63990340-7A35-4FC7-BC64-9B4333F75191",
+    "Handicap" : 17
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 3,
+    "Yardage" : 391,
+    "Hole" : 15,
+    "TeeID" : 4,
+    "id" : "671B5331-2D74-4141-8A0D-6A460C787110",
+    "Handicap" : 15
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 5,
+    "Yardage" : 288,
+    "Hole" : 15,
+    "TeeID" : 1,
+    "id" : "6EF26350-7CFC-E363-2DB4-E062F1E1E192",
+    "Handicap" : 4
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 2,
+    "Yardage" : 302,
+    "Hole" : 15,
+    "TeeID" : 3,
+    "id" : "84E4F42C-042F-4F72-A5AE-3FBD47BE8ABB",
+    "Handicap" : 14
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 12,
+    "Yardage" : 427,
+    "Hole" : 15,
+    "TeeID" : 1,
+    "id" : "8BEDCBC8-1642-4CF7-BA0E-724B996128F5",
+    "Handicap" : 6
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 1,
+    "Yardage" : 169,
+    "Hole" : 15,
+    "TeeID" : 1,
+    "id" : "CECEB436-D466-4BA9-B313-38BDE4A65DD2",
+    "Handicap" : 17
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 1,
+    "Yardage" : 192,
+    "Hole" : 15,
+    "TeeID" : 2,
+    "id" : "B995046F-B152-446F-AD4A-07FB2DEE63C0",
+    "Handicap" : 17
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 6,
+    "Yardage" : 325,
+    "Hole" : 15,
+    "TeeID" : 8,
+    "id" : "C33B6946-A28E-4A51-BE24-9A2F0DE6C5C9",
+    "Handicap" : 3
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 8,
+    "Yardage" : 112,
+    "Hole" : 15,
+    "TeeID" : 1,
+    "id" : "D1135337-D6CB-41B6-A6CC-83521DE7BFAF",
+    "Handicap" : 16
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 7,
+    "Yardage" : 529,
+    "Hole" : 15,
+    "TeeID" : 1,
+    "id" : "DB89015B-0138-42E9-AA93-FCFDE741E745",
+    "Handicap" : 2
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 5,
+    "Yardage" : 418,
+    "Hole" : 15,
+    "TeeID" : 7,
+    "id" : "E8F821CF-152F-4E81-BF3E-50CA501A1F35",
+    "Handicap" : 4
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 9,
+    "Yardage" : 289,
+    "Hole" : 15,
+    "TeeID" : 1,
+    "id" : "F74FDDED-7CA9-41E2-A212-5FC981271FBF",
+    "Handicap" : 18
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 3,
+    "Yardage" : 325,
+    "Hole" : 15,
+    "TeeID" : 0,
+    "id" : "FA46AB31-E723-4235-896F-25FE8FE80027",
+    "Handicap" : 1
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 352,
+    "Hole" : 16,
+    "TeeID" : 1,
+    "id" : "3CC00091-2140-4464-94D3-E5F1E24DA9E3",
+    "Handicap" : 3
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 9,
+    "Yardage" : 193,
+    "Hole" : 16,
+    "TeeID" : 1,
+    "id" : "29E9E733-36E3-48CC-9D3A-3988B6B54C90",
+    "Handicap" : 14
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 10,
+    "Yardage" : 435,
+    "Hole" : 16,
+    "TeeID" : 1,
+    "id" : "30A43CFD-9DED-4275-BD87-1E5CFBF0CDDA",
+    "Handicap" : 3
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 2,
+    "Yardage" : 467,
+    "Hole" : 16,
+    "TeeID" : 3,
+    "id" : "3179B2F1-C98A-4F76-B4F1-D2B17E122472",
+    "Handicap" : 8
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 3,
+    "Yardage" : 120,
+    "Hole" : 16,
+    "TeeID" : 0,
+    "id" : "39D11784-5C13-4D54-961C-7BE406553757",
+    "Handicap" : 11
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 4,
+    "Yardage" : 338,
+    "Hole" : 16,
+    "TeeID" : 6,
+    "id" : "592161DB-6BFE-4912-A2FC-447B10347F57",
+    "Handicap" : 6
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 7,
+    "Yardage" : 158,
+    "Hole" : 16,
+    "TeeID" : 1,
+    "id" : "801F5C1F-1068-4E64-8D5D-DA898D042D86",
+    "Handicap" : 14
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 12,
+    "Yardage" : 102,
+    "Hole" : 16,
+    "TeeID" : 1,
+    "id" : "8CA4B254-FC99-4ACE-A067-3E6C317818D4",
+    "Handicap" : 18
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 5,
+    "Yardage" : 333,
+    "Hole" : 16,
+    "TeeID" : 1,
+    "id" : "8ED7866C-2F58-BD9E-D591-3605C4FA666A",
+    "Handicap" : 16
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 5,
+    "Yardage" : 333,
+    "Hole" : 16,
+    "TeeID" : 7,
+    "id" : "A3257CA1-D708-422A-AFBB-C1F8557191F4",
+    "Handicap" : 16
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 3,
+    "Yardage" : 148,
+    "Hole" : 16,
+    "TeeID" : 4,
+    "id" : "AFCB73C7-5818-47D9-BBA4-1733F09D4863",
+    "Handicap" : 16
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 11,
+    "Yardage" : 142,
+    "Hole" : 16,
+    "TeeID" : 1,
+    "id" : "BC183A63-EA13-4BF5-B7B5-17C3CF096B5F",
+    "Handicap" : 16
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 321,
+    "Hole" : 16,
+    "TeeID" : 3,
+    "id" : "D37E4E07-46BE-4EA8-A06D-90F61719CC28",
+    "Handicap" : 3
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 6,
+    "Yardage" : 471,
+    "Hole" : 16,
+    "TeeID" : 8,
+    "id" : "D7EB9037-9C5F-4250-B0C3-CFDD5CE26FAB",
+    "Handicap" : 5
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 8,
+    "Yardage" : 370,
+    "Hole" : 16,
+    "TeeID" : 1,
+    "id" : "EBADB9E8-8B0F-4E5D-9E6C-93E257206A8C",
+    "Handicap" : 6
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 401,
+    "Hole" : 16,
+    "TeeID" : 2,
+    "id" : "F97C0E34-4185-44E5-86AA-F09443FF02E7",
+    "Handicap" : 3
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 325,
+    "Hole" : 17,
+    "TeeID" : 1,
+    "id" : "0906E2D0-A01E-4F36-BFC5-A8DDCB7432B1",
+    "Handicap" : 9
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 7,
+    "Yardage" : 333,
+    "Hole" : 17,
+    "TeeID" : 1,
+    "id" : "1342A50C-624D-4EC8-A8C5-0B9629AF3539",
+    "Handicap" : 6
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 4,
+    "Yardage" : 304,
+    "Hole" : 17,
+    "TeeID" : 6,
+    "id" : "18DBE09F-C7A1-4076-9412-0743A4CF1BB7",
+    "Handicap" : 14
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 8,
+    "Yardage" : 152,
+    "Hole" : 17,
+    "TeeID" : 1,
+    "id" : "20D28524-A8D2-4258-B2D4-E2EA3D91C92B",
+    "Handicap" : 12
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 11,
+    "Yardage" : 431,
+    "Hole" : 17,
+    "TeeID" : 1,
+    "id" : "303A8307-8C6A-45AB-9918-443BA333C15C",
+    "Handicap" : 8
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 290,
+    "Hole" : 17,
+    "TeeID" : 3,
+    "id" : "34BF1A5C-4908-4A39-AAD9-3622B39BA573",
+    "Handicap" : 9
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 3,
+    "Yardage" : 256,
+    "Hole" : 17,
+    "TeeID" : 4,
+    "id" : "4BCEB2CF-A665-4125-89C6-90CD87F16504",
+    "Handicap" : 17
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 5,
+    "Yardage" : 157,
+    "Hole" : 17,
+    "TeeID" : 7,
+    "id" : "4D6CD19D-9CC2-433E-B575-18D8321C0A92",
+    "Handicap" : 12
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 12,
+    "Yardage" : 489,
+    "Hole" : 17,
+    "TeeID" : 1,
+    "id" : "65F5B0BC-AB49-4940-BBC4-C7403041431A",
+    "Handicap" : 8
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 3,
+    "Yardage" : 250,
+    "Hole" : 17,
+    "TeeID" : 0,
+    "id" : "8AB2327A-A417-48D6-B6D9-990CBEED9531",
+    "Handicap" : 15
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 5,
+    "Yardage" : 103,
+    "Hole" : 17,
+    "TeeID" : 1,
+    "id" : "9294F0E4-A822-657D-608B-D59A51CE37C0",
+    "Handicap" : 12
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 406,
+    "Hole" : 17,
+    "TeeID" : 2,
+    "id" : "CE607E82-A99B-4338-8109-2E0A7E07D14D",
+    "Handicap" : 9
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 10,
+    "Yardage" : 365,
+    "Hole" : 17,
+    "TeeID" : 1,
+    "id" : "A894FC59-19A5-4751-AF95-95BC69858030",
+    "Handicap" : 1
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 9,
+    "Yardage" : 361,
+    "Hole" : 17,
+    "TeeID" : 1,
+    "id" : "A936B930-C5E6-4A9A-960E-B1864A1DED56",
+    "Handicap" : 12
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 2,
+    "Yardage" : 91,
+    "Hole" : 17,
+    "TeeID" : 3,
+    "id" : "B342B586-8AEF-49A4-8855-805F2F0822BB",
+    "Handicap" : 18
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 6,
+    "Yardage" : 120,
+    "Hole" : 17,
+    "TeeID" : 8,
+    "id" : "C45106E8-0983-44F6-9AB3-BA43CA018444",
+    "Handicap" : 15
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 4,
+    "Yardage" : 357,
+    "Hole" : 18,
+    "TeeID" : 6,
+    "id" : "1F776088-5058-47DF-BBEB-253A284C4C01",
+    "Handicap" : 4
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 5,
+    "Yardage" : 395,
+    "Hole" : 18,
+    "TeeID" : 1,
+    "id" : "2C70BD1C-EB67-242C-B226-BE57ADA5E7CA",
+    "Handicap" : 18
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 3,
+    "Yardage" : 470,
+    "Hole" : 18,
+    "TeeID" : 0,
+    "id" : "41C36EF4-9658-4085-A7BB-D961A429FAE9",
+    "Handicap" : 3
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 5,
+    "Yardage" : 395,
+    "Hole" : 18,
+    "TeeID" : 7,
+    "id" : "50976E4F-4ABB-4FB6-9422-72F89A255EEF",
+    "Handicap" : 18
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 11,
+    "Yardage" : 350,
+    "Hole" : 18,
+    "TeeID" : 1,
+    "id" : "57E31C97-123B-41D4-81A1-936FAAA50E57",
+    "Handicap" : 2
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 10,
+    "Yardage" : 345,
+    "Hole" : 18,
+    "TeeID" : 1,
+    "id" : "583841BC-75D9-4E8F-AE1B-5AC0DFC2F858",
+    "Handicap" : 1
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 8,
+    "Yardage" : 335,
+    "Hole" : 18,
+    "TeeID" : 1,
+    "id" : "66A11E75-D17D-46D1-8349-D83DA1865B17",
+    "Handicap" : 14
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 423,
+    "Hole" : 18,
+    "TeeID" : 2,
+    "id" : "7723542B-9441-4248-9E40-47D2DFE46A72",
+    "Handicap" : 7
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 2,
+    "Yardage" : 333,
+    "Hole" : 18,
+    "TeeID" : 3,
+    "id" : "78873446-BF62-49A0-82C3-96658912E6D2",
+    "Handicap" : 4
+  },
+  {
+    "Par" : 3,
+    "CourseID" : 12,
+    "Yardage" : 113,
+    "Hole" : 18,
+    "TeeID" : 1,
+    "id" : "8760AE41-6668-45A7-A661-E32A172584A9",
+    "Handicap" : 16
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 6,
+    "Yardage" : 402,
+    "Hole" : 18,
+    "TeeID" : 8,
+    "id" : "982072DA-7539-465D-84E5-120336F822A4",
+    "Handicap" : 1
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 373,
+    "Hole" : 18,
+    "TeeID" : 1,
+    "id" : "ABA36E0D-38F5-41AE-83EA-F7C261A316D1",
+    "Handicap" : 7
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 7,
+    "Yardage" : 324,
+    "Hole" : 18,
+    "TeeID" : 1,
+    "id" : "D0EC7761-DCF6-41EA-AEC7-DB73D7BA3897",
+    "Handicap" : 10
+  },
+  {
+    "Par" : 5,
+    "CourseID" : 3,
+    "Yardage" : 490,
+    "Hole" : 18,
+    "TeeID" : 4,
+    "id" : "E16EBE31-8D6B-4801-B090-61CE58091120",
+    "Handicap" : 18
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 9,
+    "Yardage" : 358,
+    "Hole" : 18,
+    "TeeID" : 1,
+    "id" : "E120502A-D32B-40F2-99E6-38137DB8BC4F",
+    "Handicap" : 6
+  },
+  {
+    "Par" : 4,
+    "CourseID" : 1,
+    "Yardage" : 321,
+    "Hole" : 18,
+    "TeeID" : 3,
+    "id" : "EE119E0E-FF3C-4F0C-BD75-2296CCE46C7B",
+    "Handicap" : 7
+  }
+]
